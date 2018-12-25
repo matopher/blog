@@ -26,13 +26,18 @@
         @endforeach
     @endif
 
-    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+    <div class="py-4" v-pre>
+
         @yield('content')
-        <p class="text-grey-darker text-xl md:mt-0">Published on {{ date('F j, Y', $page->date) }}.</p>
+
+        <p class="text-grey-darker text-xl md:mt-0 mb-0">Published on {{ date('F j, Y', $page->date) }}.</p>
+
     </div>
 
+    @include('_components.newsletter-signup')
+
     <nav class="flex justify-between text-sm md:text-base">
-        <div>
+        <div class="max-w-xs mx-4">
             @if ($next = $page->getNext())
                 <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
                     &LeftArrow; {{ $next->title }}
@@ -40,7 +45,7 @@
             @endif
         </div>
 
-        <div>
+        <div class="max-w-xs mx-4">
             @if ($previous = $page->getPrevious())
                 <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
                     {{ $previous->title }} &RightArrow;
