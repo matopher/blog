@@ -5,6 +5,7 @@ title: Facebook Business Page Reach Just Got Slashed (Should You Be Concerned?)
 date: 2018-2-17
 description: Facebook recently announced they're drastically cutting down the reach of organic (unpaid) posts in the newsfeed in favor of more &quot;meaningful&quot; content.
 categories: [marketing]
+cover_image: https://images.unsplash.com/photo-1522159698025-071104a1ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ---
 <link rel="canonical" href="https://blog.mcmkt.com/facebook-business-page-reach-slashed" />
 

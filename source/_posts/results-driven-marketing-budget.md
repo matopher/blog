@@ -5,6 +5,7 @@ title: Set a Marketing Budget From Scratch in 5 Easy Steps
 date: 2018-02-18
 description: In this post we're going to start with some practical questions, use a couple rules of thumb, avoid discounting of-the-wall channels, and tie everything together by basing our marketing spend off our revenue goal.
 categories: [marketing]
+cover_image: https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg
 ---
 
 Would you rather set your annual marketing budget or get a root canal?

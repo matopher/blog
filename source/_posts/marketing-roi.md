@@ -5,6 +5,7 @@ title: 5 Time-Tested Principles to Track Your Digital Marketing ROI
 date: 2017-9-18
 description: Which marketing channels made you the most money yesterday,  last week, or last month? ...No clue? You need a solid ROI tracking plan for your business.
 categories: [marketing]
+cover_image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1602&q=80
 ---
 <link rel="canonical" href="https://blog.mcmkt.com/5-time-tested-principles-to-flawlessly-track-your-digital-marketing-roi" />
 

@@ -5,6 +5,7 @@ title: Learn How to Code With This Simple, 3-Step Framework
 date: 2018-12-27
 description: Want to code but not sure how to start? Use this tried-and-true framework to get started — even if programming seems scary. 
 categories: [software]
+cover_image: /assets/img/posts/learn-to-code/feature.jpeg
 ---
 
 I talked to a developer last week who has been teaching kids to code in an after school program. 

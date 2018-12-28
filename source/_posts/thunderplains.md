@@ -5,6 +5,7 @@ title: 3 Ways OKC’s Thunderplains Conference Transformed My Career
 date: 2018-11-03
 description: How the habits and connections around OKC's Thunderplains Conference led to me breaking into my dream software startup job in less than one year.
 categories: [software]
+cover_image: https://cdn-images-1.medium.com/max/1600/0*BiS6-dB2-94d4VI6
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/0*BiS6-dB2-94d4VI6)

@@ -5,6 +5,7 @@ title: "Inbound & Hypergrowth: 25 Game-Changing Insights to Fuel Your Business"
 date: 2017-10-18
 description: I’ve distilled the most actionable, valuable insights from two conferences into 25 bite-sized nuggets you can start leveraging today to grow your business.
 categories: [marketing]
+cover_image: https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 ---
 <link rel="canonical" href="https://blog.mcmkt.com/inbound-2017-hypergrowth-25-game-changing-insights-to-fuel-your-business" />
 
