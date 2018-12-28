@@ -15,7 +15,7 @@
     </div>
 
     @foreach ($page->posts($posts) as $post)
-        @include('_components.post-preview-inline')
+        @include('_components.post-preview-list', ['constrain_image_to_grid' => false])
 
         @if (! $loop->last)
             <hr class="w-full border-b mt-2 mb-6">

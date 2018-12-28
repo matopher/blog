@@ -33,7 +33,7 @@ pagination:
     <hr class="border-b my-6">
 
     @foreach ($pagination->items as $post)
-        @include('_components.post-preview-with-image')
+        @include('_components.post-preview-list', ['constrain_image_to_grid' => false])
 
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
