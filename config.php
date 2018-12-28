@@ -47,4 +47,12 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+    'allCategories' => function ($page, $posts) {
+        return $posts->pluck('categories')->flatten()->unique();
+    },
+    'countPostsInCategory' => function ($page, $posts, $category) {
+        return $posts->reduce(function ($carry, $post) use ($category) {
+            return $carry + collect($post->categories)->contains($category);
+        });
+    },
 ];

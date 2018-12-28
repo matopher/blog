@@ -15,6 +15,21 @@ pagination:
 @section('body')
     <h1>Articles</h1>
 
+
+    <span class="uppercase font-semibold leading-loose tracking-wide text-grey-darkest">Sort by Category</span>
+
+    <div class="flex-auto w-full container mb-4">
+        @foreach ($page->allCategories($posts) as $category)
+            <a 
+            href="/blog/categories/{{ $category }}"
+            class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            >
+                {{ $category }}
+                ({{ $page->countPostsInCategory($posts, $category) }})
+            </a>
+        @endforeach
+    </div>
+
     <hr class="border-b my-6">
 
     @foreach ($pagination->items as $post)
