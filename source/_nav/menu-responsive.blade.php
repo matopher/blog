@@ -16,13 +16,6 @@
         </li>
         <li class="pl-4">
             <a
-                title="{{ $page->siteName }} About"
-                href="/about"
-                class="nav-menu__item hover:text-blue {{ $page->isActive('/about') ? 'active text-blue' : '' }}"
-            >About</a>
-        </li>
-        <li class="pl-4">
-            <a
                 title="{{ $page->siteName }} Podcast"
                 href="http://sixstarsonly.com/"
                 target="_blank" 
