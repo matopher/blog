@@ -38,7 +38,7 @@
               text-base md:shadow-none shadow-lg"
         type="submit"
       >
-        Stay in the Loop
+        Subscribe
       </button>
     </div>
   </form>
