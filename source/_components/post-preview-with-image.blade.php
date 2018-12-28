@@ -1,5 +1,19 @@
 <div class="flex flex-col mb-4">
 
+    @if ($post->cover_image)
+        <a
+        href="{{ $post->getUrl() }}"
+        title="Read more - {{ $post->title }}"
+        class="text-black font-extrabold"
+        >
+            <img 
+            src="{{ $post->cover_image }}" 
+            alt="{{ $post->title }} cover image" class="mb-2 w-full" 
+            style="{{ $constrain_image_to_grid ? 'max-height: 10rem; max-height: 10rem; object-fit: cover; object-position: center;' : ''}}"
+            >
+        </a>
+    @endif
+
     <div class="flex-auto w-full container mb-4 mt-2">
         @if ($post->categories)
             @foreach ($post->categories as $i => $category)
