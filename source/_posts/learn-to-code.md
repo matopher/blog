@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Learn How to Code With This Simple, 3-Step Framework
 date: 2018-12-27
-description: Add a custom 404 page is easy with Jigsaw
+description: Want to code but not sure how to start? Use this tried-and-true framework to get started — even if programming seems scary. 
 categories: [software]
 ---
 

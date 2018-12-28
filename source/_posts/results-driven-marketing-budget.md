@@ -1,10 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-title: How to Set a Results-Driven Marketing Budget to Outperform Competitors
+title: Set a Marketing Budget From Scratch in 5 Easy Steps
 date: 2018-02-18
-description: Add a custom 404 page is easy with Jigsaw
-categories: [configuration, feature]
+description: In this post we're going to start with some practical questions, use a couple rules of thumb, avoid discounting of-the-wall channels, and tie everything together by basing our marketing spend off our revenue goal.
+categories: [marketing]
 ---
 
 Would you rather set your annual marketing budget or get a root canal?
@@ -12,8 +12,6 @@ Would you rather set your annual marketing budget or get a root canal?
 If you're like me, it can almost feel like a toss-up. Not everyone gets a "rush" from swimming in spreadsheets and numbers --- but there's good news for the rest of us! You don't to have an accounting degree or fall in love with business finance to set a results-driven marketing budget that sets a clear path for sustainable growth.
 
 In this post we're going to start with some practical questions, use a couple rules of thumb, avoid discounting of-the-wall channels, and tie everything together by basing our marketing spend off our revenue goal.
-
-![](https://cdn-images-1.medium.com/max/1600/0*AQNbV3Udfy-bSWps.)
 
 ### 1) Benchmark your revenue to start with the end in mind
 
@@ -24,8 +22,6 @@ It's critical to nail down an accurate picture of your business' revenue to set 
 A solid revenue number can also provide a useful proxy to gauge your company's "helpfulness." The way I see it: A business' goal is not to make money. It's actually to help people.
 
 Making money is the byproduct of successfully helping people solve difficult, painful problems.
-
-![](https://cdn-images-1.medium.com/max/1600/0*VguBIVYn5C3pKjaY.)
 
 ### 2) Are you a scrappy upstart or an established contender?
 
@@ -45,10 +41,6 @@ But, what does a company in the "scrappy upstart" camp look like?
 
 Newer companies don't usually have the brand-name recognition, tsunami of traffic, and steady stream of leads that established players take for granted. Scrappy upstarts work overtime to discover new customers, spread awareness, and spin-up new processes on the fly to nurture leads.
 
-> [Quick Aside --- If you're serious about setting a high-quality marketing budget, go grab our in-depth guide, "How Much Should I Spend on Marketing?"](https://go.mcmkt.com/marketing-spend-guide)
-
-![](https://cdn-images-1.medium.com/max/1600/0*DwkGnfvMohBRNqYo.)
-
 ### 3) Use these rule-of-thumb metrics as a jumping-off point
 
 Every business is different. Context is king and the exact numbers you pick for your quarterly and annual marketing budget depend on your unique situation.
@@ -67,8 +59,6 @@ The story changes when you're evaluating budget as a larger, established company
 
 While scrappy upstarts play offense with their budgets, established contenders play defense. Established budgets seek to maintain deep relationships with customers and systemize what's already working rather than chasing down aggressive growth goals.
 
-![](https://cdn-images-1.medium.com/max/1600/0*vRX8iInLzCoukcn7.)
-
 ### 4) Intentionally "waste" at least 10% of your marketing spend
 
 Conventional wisdom blindly dictates that easily measurable marketing channels like Facebook Ads should win out over hard-to-measure channels like podcasts. This idea falls flat for for one key reason: arbitrage.
@@ -86,8 +76,6 @@ But what if you had been the first business to leverage email to grow your busi
 Everyone would have told you, "It'll never work. It's too difficult. How will you tell if it's working?". It would've been risky, but.... You would've won big-time.
 
 Don't shy away entirely from up-and-coming marketing channels that feel murky, unclear, and difficult-to-track. Instead, set aside a slice of your budget to make calculated bets so you have a shot at leveraging the next "email"-like channel on the ground floor.
-
-![](https://cdn-images-1.medium.com/max/1600/0*tpYNPW7wEVE46Vkn.)
 
 ### 5) Start from the bottom-up to set ROI-based goals grounded in reality
 

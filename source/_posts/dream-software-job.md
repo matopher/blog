@@ -5,7 +5,7 @@ title: How I Landed My Dream Software Job in 12 Months
 date: 2018-11-20
 cover_image: /assets/img/dream-software-job.png
 description: In this talk, Matt unpacks the 3 cornerstone habits that paved the way to consistently grow as a software developer, balloon his professional network, easily share the best takeaways to begin building an audience — and of course, get his dream software job.
-categories: [configuration, feature]
+categories: [software]
 featured: true
 ---
 😳 Absolutely unreal... 

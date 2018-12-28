@@ -1,10 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-title: Demystify Top-Ranked YouTube Videos With These Simple SEO Techniques
+title: Get Your Video Ranked in YouTube Search With These Simple SEO Techniques
 date: 2017-07-12
-description: Add a custom 404 page is easy with Jigsaw
-categories: [configuration, feature]
+description: YouTube = the world's 2nd largest search engine. Want to rank number-one? Start with these quick wins to claim the top spot. 
+categories: [video]
 ---
 
 ##How should you research keywords to rank your video for more views?

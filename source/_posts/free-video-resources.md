@@ -3,8 +3,8 @@ extends: _layouts.post
 section: content
 title: 22+ Free Resources for Video Creators (That I’ve Actually Used to Save Time)
 date: 2018-05-30
-description: Add a custom 404 page is easy with Jigsaw
-categories: [configuration, feature]
+description: Use these free templates, tools & time-saving tricks to crank out professional looking videos in a fraction of the time.
+categories: [video]
 ---
 
 This week on [Six Stars Only](http://sixstarsonly.com/) we're sharing the best 100% free resources we actually use to create videos that stand out from music to motion graphics.

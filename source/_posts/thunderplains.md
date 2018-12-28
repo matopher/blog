@@ -1,10 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-title: 3 Ways OKC’s Thunderplains Conference Transformed My Career in 12 Months
+title: 3 Ways OKC’s Thunderplains Conference Transformed My Career
 date: 2018-11-03
-description: Add a custom 404 page is easy with Jigsaw
-categories: [configuration, feature]
+description: How the habits and connections around OKC's Thunderplains Conference led to me breaking into my dream software startup job in less than one year.
+categories: [software]
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/0*BiS6-dB2-94d4VI6)
