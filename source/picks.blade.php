@@ -126,6 +126,12 @@
           <li class="mb-2">
             <a href="https://amzn.to/2R0WDvp" target="_blank" rel="noopener">Building a StoryBrand: Clarify Your Message So Customers Will Listen</a>
           </li>
+          <li class="mb-2">
+            <a href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299" target="_blank" rel="noopener">Atomic Habits</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.amazon.com/McGraw-Hill-Education-Positioning-Battle-Your/dp/B000EQDE1C/" target="_blank" rel="noopener">Positioning: The Battle for Your Mind</a>
+          </li>
         </ul>
     
         <h2>🎧 Podcasts</h2>
