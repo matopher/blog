@@ -9,6 +9,11 @@
         Picks
     </a>
 
+    <a title="{{ $page->siteName }} Picks" href="/projects"
+        class="ml-6 text-grey-darker hover:text-blue-dark {{ $page->isActive('/projects') ? 'active text-blue-dark' : '' }}">
+        Projects
+    </a>
+
     <a title="{{ $page->siteName }} Podcast" href="http://sixstarsonly.com/"
         class="ml-6 text-grey-darker hover:text-blue-dark" target="_blank" rel="noopener">
         Podcast
