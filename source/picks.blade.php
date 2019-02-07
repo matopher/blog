@@ -132,6 +132,18 @@
           <li class="mb-2">
             <a href="https://www.amazon.com/McGraw-Hill-Education-Positioning-Battle-Your/dp/B000EQDE1C/" target="_blank" rel="noopener">Positioning: The Battle for Your Mind</a>
           </li>
+          <li class="mb-2">
+            <a href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299"
+                target="_blank" rel="noopener">Atomic Habits</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.amazon.com/American-Kingpin-Criminal-Mastermind-Behind/dp/B06Y1QXMXX/"
+                target="_blank" rel="noopener">American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.amazon.com/Simon-Schuster-Audio-Principles-Life/dp/B074B2CZJG/ref=sr_1_1?ie=UTF8&qid=1549497822&sr=1-1-spons&keywords=principles"
+                target="_blank" rel="noopener">Principles</a>
+          </li>
         </ul>
     
         <h2>🎧 Podcasts</h2>
