@@ -89,6 +89,9 @@
         @stack('scripts')
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+
+            <a href="/go" target="_blank" rel="noopener">Peru Trip</a>
+
             <div class="flex items-center justify-center mx-auto pt-4">
                 <div class="px-1 mx-4">
                     <a href="https://twitter.com/matopher" target="_blank" rel="noopener">
