@@ -13,6 +13,8 @@
         <p>We have an opportunity to say “Yes” to Jesus again by going on our first missions trip as a married couple. </p>
         <p>Will you help us reach & serve Peru?</p>
 
+        <iframe class="my-4 block" width="560" height="315" src="https://www.youtube.com/embed/xXdD-7g_NIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <a href="https://app.managedmissions.com/MyTrip/woods" class="mt-4 text-3xl underline">Go here to give online &rarr;</a>
 
         <h2>Why are you going to Peru?</h2>
