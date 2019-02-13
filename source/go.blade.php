@@ -21,6 +21,9 @@
         <p>We want to share the Good News about Jesus with people in Lima & Pucallpa, Peru who don’t know him yet. Our discipleship training school ends with a two-week missions trip overseas to take the Jesus-centered obedience we’ve been practicing in Oklahoma and actively share it in the nations.</p>
 
         <h2>How are we spending our time?</h2>
+
+        <img src="/assets/img/peru-1.png" alt="How are we spending our time?" />
+
         <ul>
             <li>Working & Praying alongside local missionaries & churches</li>
             <li>Teaching in the Jungle by partnering with a local Bible institute for an indigenous tribe</li>
