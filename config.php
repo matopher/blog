@@ -22,6 +22,11 @@ return [
                 });
             },
         ],
+        'notes' => [
+            'author' => '',
+            'sort' => '-date',
+            'path' => 'notes/{filename}',
+        ],
     ],
 
     // helpers
