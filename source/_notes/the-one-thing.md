@@ -4,7 +4,7 @@ section: content
 title: The One Thing
 author: Gary Keller
 cover_image: /assets/img/notes/the-one-thing_cover.jpg
-description: ‘A goal-setting classic I recommend to anyone who wants to be more effective. Focus is the key.’
+description: A goal-setting classic I recommend to anyone who wants to be more effective. Focus is the key.
 rating: 5
 ---
 

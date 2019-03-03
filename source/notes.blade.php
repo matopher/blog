@@ -25,7 +25,11 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
     @foreach ($pagination->items as $post)
 
         @if ($post->cover_image)
-            <img src="{{ $post->cover_image }}" alt="{{ $post->title }} cover image" class="mb-2 mr-2 h-48">
+            <a
+            href="{{ $post->getUrl() }}"
+                >
+                <img src="{{ $post->cover_image }}" alt="{{ $post->title }} cover image" class="mb-2 mr-2 h-48">
+            </a>
         @endif
 
         <h2>
@@ -38,7 +42,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
         </h2>
 
         <span
-            class="inline-block bg-grey-light leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-grey-light leading-loose tracking-wide text-grey-darkest uppercase text-base font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             My rating: {{ $post->rating }}/5
         </span>
