@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://mattwoods.io/',
+    'baseUrl' => 'http://mattwoods-blog.test/',
     'production' => false,
     'siteName' => 'Matt Woods: Marketer + Developer',
     'siteDescription' => 'Crazy about good books, growing businesses through honest marketing, and making everyone around me feel loved. Join me on my journey.',
@@ -23,8 +23,6 @@ return [
             },
         ],
         'notes' => [
-            'author' => '',
-            'sort' => '-date',
             'path' => 'notes/{filename}',
         ],
     ],
