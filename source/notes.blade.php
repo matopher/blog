@@ -20,6 +20,10 @@ pagination:
 
     @foreach ($pagination->items as $post)
 
+        @if ($post->cover_image)
+            <img src="{{ $post->cover_image }}" alt="{{ $post->title }} cover image" class="mb-2 mr-2 h-48">
+        @endif
+
         <h2>
             <a
             href="{{ $post->getUrl() }}"
