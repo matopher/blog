@@ -3,6 +3,7 @@ extends: _layouts.note
 section: content
 title: The One Thing
 author: Gary Keller
+cover_image: /assets/img/notes/the-one-thing_cover.jpg
 description: 'Great book about goal setting by gary keller.'
 rating: 5
 ---

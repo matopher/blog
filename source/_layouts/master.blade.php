@@ -20,7 +20,7 @@
         <meta name="twitter:creator" content="@matohper">
         <meta name="twitter:image" content="/assets/img/meta.png">
 
-        <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
+        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">

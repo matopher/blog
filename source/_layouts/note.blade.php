@@ -8,11 +8,23 @@
 @endpush
 
 @section('body')
-    @if ($page->cover_image)
-        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
-    @endif
+    <div class="lg:flex">
+        @if ($page->cover_image)
+            <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2 mr-2 h-48">
+        @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }} by {{ $page->author }}</h1>
+        <div class="flex flex-col p-2">
+            <h1 class="leading-none mb-2">{{ $page->title }} by {{ $page->author }}</h1>
+            <div class="inline-flex">
+                <span
+                class="inline-block leading-loose tracking-wide bg-grey-light text-grey-darkest uppercase text-md font-semibold rounded mr-4 my-2 px-3 pt-px"
+                    >
+                    My Rating: {{ $page->rating }}/5
+                </span>
+            </div>
+        </div>
+
+    </div>
 
     <div class="py-4" v-pre>
 
