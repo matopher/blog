@@ -7,7 +7,7 @@ cover_image: /assets/img/notes/they-ask-you-answer_cover.jpg
 description: A refreshing take on how to create content that matches modern buying habits. A solid read for inbound marketers, but not a classic by any stretch.
 rating: 3
 ---
-## The big 5 types of content
+## The Big 5 Types of Content
 1. Pricing and Costs
 2. Problems
 3. Versus and Comparisons

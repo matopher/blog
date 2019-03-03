@@ -3,7 +3,7 @@
 return [
     'baseUrl' => 'http://mattwoods-blog.test/',
     'production' => false,
-    'siteName' => 'Matt Woods: Marketer + Developer',
+    'siteName' => 'Matt Woods',
     'siteDescription' => 'Crazy about good books, growing businesses through honest marketing, and making everyone around me feel loved. Join me on my journey.',
     'siteAuthor' => 'Matt Woods',
 
@@ -23,6 +23,7 @@ return [
             },
         ],
         'notes' => [
+            'sort' => '-rating',
             'path' => 'notes/{filename}',
         ],
     ],
