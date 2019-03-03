@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->title }}" />
+    <meta property="og:title" content="{{ $page->title }} by {{ $page->author }}: Summary, Notes & Lessons" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
     <meta property="og:description" content="{{ $page->description }}" />
