@@ -3,8 +3,8 @@ extends: _layouts.post
 section: content
 title: The One Thing
 author: Gary Keller
-date: 2018-11-20
 description: Great book on goal setting by gary keller.
+rating: 5
 ---
 
 ## Notes that stand out
