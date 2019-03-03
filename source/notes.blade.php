@@ -13,6 +13,10 @@ pagination:
     
 @endpush
 
+@push('title')
+Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
+@endpush
+
 @section('body')
     <h1>Summaries, Notes, and Reviews from Books I've Read</h1>
 

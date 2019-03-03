@@ -7,6 +7,10 @@
     <meta property="og:description" content="{{ $page->description }}" />
 @endpush
 
+@push('title')
+    {{ $page->title }} by {{ $page->author }}: Summary, Notes & Lessons
+@endpush
+
 @section('body')
     <div class="lg:flex">
         @if ($page->cover_image)

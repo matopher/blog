@@ -17,10 +17,16 @@
         <meta name="twitter:site" content="@matopher">
         <meta name="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
         <meta name="twitter:description" content="{{ $page->siteDescription }}">
-        <meta name="twitter:creator" content="@matohper">
+        <meta name="twitter:creator" content="@matopher">
         <meta name="twitter:image" content="/assets/img/meta.png">
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        <title>
+            @if ( strpos($page->getPath(), 'notes') )
+                @stack('title')
+            @else
+            {{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}
+            @endif
+        </title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
