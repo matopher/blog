@@ -41,3 +41,57 @@ A prototype is not something that's ready for prime time. Not something your tea
 **Prototype vs. MVP**
 
 The MVP should be a prototype, not a product. A product means your customers can run their business on what you release, sell & support. Building a fully baked product to learn is a huge waste — even if it's simple.
+The Product Manager is ultimately accountable for a product's success because their primary responsibility is to evaluate opportunities and determine what the product team builds for customers.
+
+> When a product succeeds, it's because everyone on the team did what they needed to do. But when a product fails, it's the product manager's fault.
+
+Successful PMs must be the best versions of smart, creative and persistent.
+
+- Smart = Stay curious. Learn quickly. Apply new technologies.
+- Creative = Solve business problems by thinking outside the normal product box.
+- Persistent = Use evidence to push past resistance, build cross-functional bridges, & communicate consistently
+
+**Core Principles to Structure Successful Product Teams**
+
+1. Alignment with investment strategy
+    - Intentionally spread out your investments over time & risk.
+2. Minimize dependencies
+    - Reduce whenever possible to increase speed & feeling of autonomy.
+3. Ownership and autonomy
+    - Harder than it sounds, but aim for a team of empowered - yet accountable - missionaries, not mercenaries.
+4. Maximize Leverage
+    - When the price is right, don't be afraid to create shared services like a Platform squad.
+5. Product vision and strategy
+    - Product Vision = where the organization is trying to go.
+    - Product Strategy = Describes major milestones to get there.
+6. Team size
+    - Minimum size for a product team: two engineers + a product manager.
+    - Max ratio: 10-12 engineers / 1 product manager + designer
+7. Alignment with architecture
+    - Architectures drive technologies, which drive skillsets.
+    - Warning signs: Teams shouldn't constantly feel like they're fighting architecture, disproportionately dependent on each other, or always moving too slowly.
+8. Alignment with the customer
+    - Example: In a two-sided marketplace, splitting into separate *buyer* and *seller* teams can enable product teams to go deep with *their* specific customers.
+9. Alignment with business
+    - Consider the above factors first, then feel free to prioritize the role of business lines built around a shared, foundational product.
+10. Structure is a moving target
+    - Review your team structure roughly every year to account for your organization's natural evolution.
+
+**The Problem with Product Roadmaps: Two Inconvenient Truths**
+
+1. At least half of product ideas won't pan out because they're invalidated by one of the 4 risks (Value, Usability, Feasibility, Business). 
+2. Time to money isn't perfectly measurable. Successful products usually take *several iterations* to successfully deliver the intended business value even if your products pass the 4 Risks Test.
+
+Remember: We need to solve a problem, not just build a feature.
+
+**The Alternative to Roadmaps**
+
+Despite their systematic flaws, many organizations use product roadmaps for two reasons.
+
+1. Management wants to ensure teams are working on the *highest impact items* for the business.
+2. Key players in the business need commitments to *concrete dates* so they can plan effectively.
+
+Luckily, two lifesaving resources can replace the product roadmap at a tech company and provide more reliable value by enabling *high-integrity commitments*:
+
+1. Product Vision and Strategy
+2. Business Objectives
