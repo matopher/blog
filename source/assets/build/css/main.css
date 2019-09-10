@@ -910,16 +910,36 @@ main li {
 
 main ol,
 main ul {
-  margin-top: 22px;
-  margin-bottom: 25px;
-  padding: 19px 18px 0 30px;
-  clear: both;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(76, 183, 221, .02);
   border-radius: 2px;
   background-color: #f8fcff;
   box-shadow: 0 5px 15px -10px rgba(0, 89, 156, .16);
+}
+
+main ol ul,
+main ol ol,
+main ul ul,
+main ul ol {
+  padding-top: .5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: none;
+  margin: 0;
+}
+
+main ol ul li,
+main ol ol li,
+main ul ul li,
+main ul ol li {
+  margin-bottom: 0;
 }
 
 .list-reset {

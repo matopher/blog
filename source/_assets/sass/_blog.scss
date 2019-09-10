@@ -1,5 +1,3 @@
-// Your custom blog styles here
-
 main li {
   margin-top: 2px;
     margin-bottom: 14px;
@@ -9,14 +7,26 @@ main li {
 }
 
 main ol, main ul {
-    margin-top: 22px;
-    margin-bottom: 25px;
-    padding: 19px 18px 0 30px;
-    clear: both;
+    // margin-top: 22px;
+    // margin-bottom: 25px;
+    @apply my-5;
+    @apply py-4;
+    @apply px-10;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(76,183,221,.02);
     border-radius: 2px;
     background-color: #f8fcff;
     box-shadow: 0 5px 15px -10px rgba(0,89,156,.16);
+
+    ul,ol {
+        @apply pt-2;
+        @apply px-8;
+        box-shadow: none;
+        margin: 0;
+
+        li {
+            @apply mb-0;
+        }
+    }
 }
