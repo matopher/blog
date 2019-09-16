@@ -7,6 +7,7 @@ cover_image: /assets/img/notes/managing-oneself_cover.jpg
 description: An essential (and classic) guide to sculpting your own effective career as a knowledge worker.
 rating: 4
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YmT2XdHrWJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ## You have a long career ahead. Start managing yourself for success now so you don’t drift aimlessly or burn out.
 > Now, most of us, even those of us with modest endowments, will have to learn to manage ourselves. We will have to learn to develop ourselves. We will have to place ourselves where we can make the greatest contribution. And we will have to stay mentally alert and engaged during a 50-year working life, which means knowing how and when to change the work we do.
 
