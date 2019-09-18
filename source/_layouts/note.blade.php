@@ -50,4 +50,6 @@
 
     @include('_components.newsletter-signup')
 
+    <script src="https://static.cruton.app/js/cruton.js" data-tags="" defer></script>
+
 @endsection
