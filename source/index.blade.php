@@ -15,13 +15,14 @@
         alt="Matt Woods"
         class="inline-flex rounded-full h-32 w-32 bg-contain mx-auto">
 
-    <h1 >I'm Matt: A marketer + developer who grows useful tools, honestly.</h1>
+    <h1 >I'm Matt Woods. Growth Marketer, Developer, and Curious Learning Machine.</h1>
 
-    <p>Currently, I run inbound marketing at <a href="https://tailwindapp.com">Tailwind</a>.</p>
+    <p>Currently, I run Growth at <a href="https://tailwindapp.com">Tailwind</a>.</p>
 
     <p>I'm co-founding <a href="https://okcindiehackers.com/">OKC Indie Hackers</a> to help build indie software that makes the world better.</p>
 
-    <p>I publish <a href="/blog">articles</a> to document what I'm learning and you can always get my best stuff by signing up for 1-2 emails / month below.</p>
+    <p>Every week I review a new book and share the best learnings with the world in free <a href="/notes">book
+            notes.</a></p>
 
     {{-- TODO: Convert into partial --}}
     <div class="flex items-center justify-center mx-auto pt-4">
