@@ -2,8 +2,9 @@
 
     <div class="flex flex-col items-center text-center max-w-lg">
 
-    <h2 class="text-3xl mb-0">Get my best bi-weekly insights on software + marketing</h2>
-    <p class="text-center text-lg mb-0">Can I send you a collection of my most useful & interesting finds about growth, software & making stuff that matters? I'll also link to any new articles, videos, or podcast episodes.</p>
+    <h2 class="text-3xl mb-0">Get a New Book Summary in Your Inbox Every Monday</h2>
+    <p class="text-center text-lg mb-0">Every week I'll send you bite-size learnings from battle-tested books to help
+        you level-up your life and career.</p>
     
     <form
     class="w-full max-w-md mt-8"
