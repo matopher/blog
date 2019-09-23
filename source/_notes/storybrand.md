@@ -4,7 +4,7 @@ section: content
 title: Building a StoryBrand
 author: Donald Miller
 cover_image: /assets/img/notes/storybrand_cover.jpg
-description: A simple, but useful framework anyone can use to clarify their brand's message through razor-sharp storytelling to sell more stuff and help more people.
+description: Anyone can use this framework to clarify their brand's message through razor-sharp storytelling to sell more stuff and help more people.
 rating: 4
 ---
 
