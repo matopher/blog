@@ -10,9 +10,11 @@ rating: 4
 
 ## "If you confuse, you lose."
 
-Most (terrible) brands are mindless noise machines, spewing out random information that no one cares about. Instead, embrace a **filter** mentality. You want to create simple, relevant messages to repeat over and over until it soaks into the public consciousness.
+Most (terrible) brands are mindless noise machines, spewing out random information that no one cares about.
 
-"People don't buy the best products; they buy the products they can understand the fastest."
+Instead, embrace a **filter** mentality. You want to create simple, relevant messages to repeat over and over until it soaks into the public consciousness.
+
+> "People don't buy the best products; **they buy the products they can understand the fastest.**"
 
 Pretty websites don't sell things. Words sell things.
 
@@ -24,7 +26,7 @@ Nobody will listen to you if your message isn't clear.
 - Is it simple, relevant and repeatable?
 - Can anyone on your team repeat your company's message convincingly?
 
-"The more simple and predictable the communication, the easier it is for the brain to digest. **Story helps because it is a sense-making mechanism.**"
+> "The more simple and predictable the communication, the easier it is for the brain to digest. **Story helps because it is a sense-making mechanism.**"
 
 ## Mistakes Brands Make: Ignoring Survival & Too Many Mental Calories
 
@@ -32,6 +34,8 @@ Nobody will listen to you if your message isn't clear.
 2. Forcing customers to burn too many "mental calories" just to understand your offer
 
 ## The Storybrand Framework
+
+> "A _character_ who wants something encounters a _problem_ before they can get it. At the peak of their despair, a _guide_ steps into their lives, gives them a _plan, and calls them to action_. That action helps them avoid _failure_ and ends in a _success."_
 
 ![The StoryBrand Framework](/assets/img/notes/storybrand_framework.png)
 
@@ -46,8 +50,6 @@ Nobody will listen to you if your message isn't clear.
 > "In a story, audiences must always know who the hero is, what the hero wants, who the hero has to defeat to get what they want, what tragic thing will happen if the hero doesn't win, and what wonderful thing will happen if they do. "
 
 It's easier than you think to use the timeless elements of a great story as the vehicle to help customers understand the before/after difference your company's solution will make in their lives. Just remember the **timeless elements of storytelling.**
-
-> "A _character_ who wants something encounters a _problem_ before they can get it. At the peak of their despair, a _guide_ steps into their lives, gives them a _plan, and calls them to action_. That action helps them avoid _failure_ and ends in a _success."_
 
 ## Pass the "Pause" Test
 
@@ -92,7 +94,7 @@ The most compelling villains to position yourself against to clarify your value 
 
 When giving a pitch, position yourself as a helpful guide for your audience. You're Yoda. They're Luke Skywalker.
 
-Two key principles make a guide effective.
+**Two key principles make a guide effective.**
 
 1. **Empathy:** Brands must understand their customers and build trust to _earn_ the right to help them.
 2. **Authority:** Great guides bring experience to the table and know how to solve problems. You'll need a track record to support this.
@@ -108,7 +110,7 @@ Two key principles make a guide effective.
 
 People are looking for a philosophy they can embody or series of steps to solve their problems.
 
-Two common types of plans:
+**Two common types of plans:**
 
 1. **A Process Plan**: A clear series of steps to guide a customer's next steps to do business with you and eliminate confusion.
 2. **An Agreement Plan:** Proactively diffuse your customer's biggest objections, fears, and success stoppers with relevant answers before come up.
@@ -119,7 +121,7 @@ The one critical next step for a customer to work with your business must always
 
 Don't expect your customers to summon up motivation themselves; _They need you to act as a convincing, positive force to set them in motion._
 
-Great Call-to-Actions often hit on 3 things:
+**Great Call-to-Actions often hit on 3 things:**
 
 1. Stake a claim to your territory.
 2. Create reciprocity.
@@ -139,6 +141,8 @@ The solution? Be up-front about what failure will cost your customer. A simple 4
 4. Challenge them to take a clear next step with your call to action.
 
 ## 5 Quick Marketing Wins
+
+So, how should you start applying these storytelling concepts to help customers and boost sales quickly? Here are a handful of practical recommendations.
 
 1. Create a one-liner for your business.
 2. Make a simple lead generation offer to collect emails.
