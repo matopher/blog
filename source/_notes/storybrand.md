@@ -8,6 +8,8 @@ description: Anyone can use this framework to clarify their brand's message thro
 rating: 4
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r-lMQC-RiTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## "If you confuse, you lose."
 
 Most (terrible) brands are mindless noise machines, spewing out random information that no one cares about.
