@@ -7,19 +7,20 @@ cover_image: /assets/img/notes/inspired_cover.jpg
 description: A battle-tested guide to product management from a living Silicon Valley legend. Highly recommend if you want to deeply understand the ins-and-outs of customer-driven product discovery.
 rating: 5
 ---
+> "It is my strong belief and the central concept driving this book, that behind every great product there is someone —usually someone behind the scenes, working tirelessly—who led the product team to combine technology and design to solve real customer problems in a way that met the needs of the business."
 
 **10 Biggest Problems with Waterfall**
 
-1. The source of ideas. Stakeholder's aren't the best source of ideas.
+1. The source of ideas. Stakeholders aren't the best source of ideas.
 2. Business cases imply you can know the right solution and how much it'll cost. (Often wrong on both counts.)
 3. Product roadmaps don't work for two reasons: 1) Half of the ideas we try simply won't work out and 2) The promising ideas typically require several iterations to deliver the right business value.
 4. Waterfall defaults the role of the product manager to gather and document requirements for engineers.
 5. Design is implemented far too late in the game, resulting in "lipstick on a pig."
 6. Engineering gets introduced to the problem way too late. "If you're just getting engineers to code, you're only getting about half their value."
-7. Agile principles aren't applied until far too late — only affecting _delivery._
-8. The entire process is _project-centric_ rather than solving for _business outcomes_.
+7. Agile principles aren't applied until far too late — only affecting *delivery.*
+8. The entire process is *project-centric* rather than solving for *business outcomes*.
 9. Customer validation is pushed until the end (way too late!)
-10. Missed opportunity cost of what the team _should_ have been building instead.
+10. Missed opportunity cost of what the team *should* have been building instead.
 
 **3 Principles of Empowered Product Teams**
 
@@ -41,7 +42,46 @@ A prototype is not something that's ready for prime time. Not something your tea
 **Prototype vs. MVP**
 
 The MVP should be a prototype, not a product. A product means your customers can run their business on what you release, sell & support. Building a fully baked product to learn is a huge waste — even if it's simple.
+
+## Product Team Roles
+
+### The Product Manager
+
+**What Makes a PM Successful?**
+
 The Product Manager is ultimately accountable for a product's success because their primary responsibility is to evaluate opportunities and determine what the product team builds for customers.
+
+A Product Manager is **NOT** a backlog administrator or project manager. If you're simply gathering requirements and building a roadmap for engineers, you've missed the point.
+
+Instead, the most successful PMs do three key things:
+
+1. Articulate what a winning product looks like.
+2. Rally the team to build it
+3. Iterate to get it right.
+
+**PM Responsibilities**
+
+- Nurturing strong collaborative relationships across the product team
+- Evangelizing the vision and rallying the team to execute on the strategy to deliver business outcomes.
+- Deep knowledge of the customer, product analytics, business, & market.
+- Being able to lead without authority by building a consistent track record of sound decision making with no fanfare — day in, day out.
+- Strong decision-making with imperfect information ("Mostly right, never in doubt")
+- Intense preparation ("Mise en Place")
+- And a bunch of other things that are hard to reach:
+    - Customer empathy
+    - Design sense
+    - Creativity
+    - Product intuition
+    - Product mindset
+    - Obsess over customer problems
+    - Tech sophistication
+    - Learning mindset
+    - Unyielding perseverance
+    - Collaborating well with people
+    - Effective communication
+    - Detail oriented
+    - Grasping complex concepts quickly
+    - Unafraid to lead
 
 > When a product succeeds, it's because everyone on the team did what they needed to do. But when a product fails, it's the product manager's fault.
 
@@ -51,7 +91,75 @@ Successful PMs must be the best versions of smart, creative and persistent.
 - Creative = Solve business problems by thinking outside the normal product box.
 - Persistent = Use evidence to push past resistance, build cross-functional bridges, & communicate consistently
 
-**Core Principles to Structure Successful Product Teams**
+### The Product Designer
+
+A designer's responsibilities include:
+
+- The holistic user experience. Anything to help customers realize the product provides.
+- Thinking about the customer's entire journey with the company
+- Helping to discover the *right* product (and make it beautiful)
+- Prototyping as the primary canvas for communicating ideas
+- Constantly iterating and testing
+
+**Requirements for a Product Designer:**
+
+- First class member of product team, sitting side by side with the PM
+- Desire to be measured on the success of the product, not output of work
+- Deeply oriented around actual customers and how the product brings them value
+- Strong comfort with when / how to use different prototyping tools
+- Not getting too attached to ideas before they've come into contact with objective, outside opinions
+- Iterates early and often on any design approach. Explores alternative approaches to any problem.
+- Things you can't teach:
+    - Lack of ego
+    - Extremely collaborative
+    - Creative
+    - Passion for creating delightful solutions to customer problems
+    - Ability to connect & empathize with customers on different levels
+
+### The Engineer
+
+An Engineer's responsibilities include:
+
+- Delivering and maintaining products that solve customer problems
+- Be a strong technical voice in product development process
+- Deep knowledge of technology stack
+- Ensuring solutions work at scale and are reliable
+- Uncover and fix bugs
+- Openly involved in evaluating solutions and helping to come up with the *right* product based on strong understanding of customer pain points, supporting data, and business constraints
+- Ability to distinguish building something for discovery vs. delivery. Adapt to different execution styles necessary: Iterate quickly on scrappy code vs. build rock-solid, airtight systems.
+- Understanding of technical constraints, resources and opportunities available to them
+- Strong communication and ability to work cross-functionally, even across different levels of detail and knowledge
+- Effectively "scope hammer" projects into realistic pieces
+
+❌ An engineer is **NOT** a code monkey, "capacity", a designer, or tech support.
+
+### The Product Marketing Manager
+
+PMM Responsibilities:
+
+- *Represent the market to the product team.* Deep understanding of the customer, market and competitive landscape
+- Shape communication and *strategic positioning* around the product for new features
+- Owning and developing the overall *go-to-market strategy* for a product
+- Driving *demand, adoption* and overall success of the product
+    - Continuously promote and shape the product to meet customer needs at every lifecycle stage
+- Serve as a *product expert* for marketing teammates
+- *Ensure products are fully understood internally* so the full team can support them
+
+❌ A product marketing manager is NOT a product manager, email designer, branding manager, project manager, copywriter, blogger, social media marketer or ads manager. They're much more.
+
+Requirements for success:
+
+- Deep knowledge of the marketing landscape
+- Always be thinking about...
+    - How will this new feature influence the product growth?
+    - What would be the best way to launch new features?
+- Deep comfort with data and quantitative analysis
+- Adept with various research techniques to gain insight on customer needs and experiences
+- Growth mindset, strategic thinking, and business-savvy
+- Strong copywriting and storytelling skills
+- Ability to lead without authority
+
+## **Core Principles to Structure Successful Product Teams**
 
 1. Alignment with investment strategy
     - Intentionally spread out your investments over time & risk.
@@ -95,3 +203,36 @@ Luckily, two lifesaving resources can replace the product roadmap at a tech comp
 
 1. Product Vision and Strategy
 2. Business Objectives
+
+## Product Evangelism
+
+Top 10 pieces of advice for product managers to "sell the dream".
+
+1. Use a prototype.
+2. Share the pain.
+3. Share the vision.
+4. Share learnings generously.
+5. Share credit generously.
+6. Learn how to give a great demo.
+7. Do your homework.
+8. Be genuinely excited.
+9. Learn to show some enthusiasm.
+10. Spend time with your team.
+
+A couple more I feel strongly about:
+
+- Give your idea a name!
+- Everyone is a marketer on launch day.
+
+# Product Discovery
+
+If you want to *discover* great products, it's essential that you get your ideas in front of real users and customers early and often.
+
+What's the purpose of product discovery? It addresses 4 critical risks to launching a successful product:
+
+- **Value Risk:** Will the customer buy this or choose to use it?
+- **Usability Risk:** Can the user figure out how to use it?
+- **Feasibility Risk:** Can we build it?
+- **Business Viability Risk:** Does this solution work for our business?
+
+Best-in-class product discovery teams generally test 10-20 iterations of prototypes *per week.* 🤯
