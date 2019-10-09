@@ -7,6 +7,7 @@ cover_image: /assets/img/notes/they-ask-you-answer_cover.jpg
 description: A refreshing take on how to create content that matches modern buying habits. A solid read for inbound marketers, but not a classic by any stretch.
 rating: 3
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y4OObDk6bWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ## Don't fall into the trap of "Ostrich Marketing"
 
 Consumer expectations have changed when they're researching companies and products online. Ignorance isn't a viable marketing strategy. If you don't talk about your flaws online, your would-be customers will find out anyways. Don't miss an opportunity to get out ahead of your customers' problems and concerns.
