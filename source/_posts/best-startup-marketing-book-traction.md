@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: 'The Best Book on Startup Marketing: Traction'
-date: 2018-03-07
+date: 2019-10-13
 cover_image: /assets/img/posts/bullseye.png
 description: "One primary factor separates new businesses with explosive growth from gut-wrenching failures: Traction. In this episode, I unpack one of the best books I've read on startup marketing with John Mosesman."
 categories: [marketing, podcast]
