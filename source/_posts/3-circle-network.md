@@ -4,13 +4,13 @@ section: content
 title: Why Every Fast-Growing Professional Needs a 3-Circle Network
 date: 2018-03-07
 cover_image: /assets/img/posts/3-circle-network/feature.png
-description: Does the idea of "networking" make you uneasy? Good news. It doesn't have to! 
+description: Does the idea of "networking" make you uneasy? Good news. It doesn't have to!
 categories: [marketing]
-featured: true
 ---
-Does the idea of "networking" make you uneasy? Good news: It doesn't have to! 
 
-There's a more authentic way to grow your career faster and give back to the community. I call it building a 3-Circle Network and it's helped me land my dream job at a software startup and "randomly" get a YouTube video with 18,000+ views. 
+Does the idea of "networking" make you uneasy? Good news: It doesn't have to!
+
+There's a more authentic way to grow your career faster and give back to the community. I call it building a 3-Circle Network and it's helped me land my dream job at a software startup and "randomly" get a YouTube video with 18,000+ views.
 
 There's no shortcut. It's all fueled by personal growth, intentional outreach, documenting key learnings, and giving back unselfishly.
 
