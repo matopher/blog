@@ -5,18 +5,16 @@ media_folder: 'source/assets/img'
 public_folder: '/assets/img'
 collections:
   - name: 'blog'
-    identifier_field: slug
     label: 'Blog'
     folder: 'source/_posts'
     create: true
-    slug: '{{fields.slug}}'
+    slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'extends', widget: 'hidden', default: '_layouts.post' }
       - { label: 'Section', name: 'content', widget: 'hidden', default: 'content' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Categories', name: 'categories', widget: 'string', default: 'List [ "" ]' }
+      - { label: 'Categories', name: 'categories', widget: 'string' }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
