@@ -25,5 +25,8 @@
         "vue": "^2.5.21",
         "vue-template-compiler": "^2.5.21",
         "yargs": "^4.6.0"
+    },
+    "dependencies": {
+        "netlify-cms": "2.9.7"
     }
 }

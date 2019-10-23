@@ -75,4 +75,17 @@
             <hr class="w-full border-b mt-2 mb-6">
         @endif
     @endforeach
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+
 @stop
