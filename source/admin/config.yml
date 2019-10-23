@@ -15,6 +15,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Categories', name: 'categories', widget: 'st' }
+      - { label: 'Categories', name: 'categories', widget: 'string' }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
