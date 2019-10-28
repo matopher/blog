@@ -14,8 +14,8 @@ collections:
       - { label: 'Section', name: 'content', widget: 'hidden', default: 'content' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Categories', name: 'categories', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Categories', name: 'categories', widget: 'list', default: ['marketing'] }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'notes'
@@ -29,6 +29,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      # - { label: 'Rating', name: 'rating', widget: 'integer' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Rating', name: 'rating', widget: 'number', valueType: 'int', min: 1, max: 5 }
       - { label: 'Body', name: 'body', widget: 'markdown' }
