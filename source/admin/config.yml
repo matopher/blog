@@ -15,7 +15,13 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'Categories', name: 'categories', widget: 'list', default: ['marketing'] }
+      - {
+          label: 'Categories',
+          name: 'categories',
+          widget: 'list',
+          default: ['marketing'],
+          fields: ['marketing', 'software', 'video', 'podcast'],
+        }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'notes'
