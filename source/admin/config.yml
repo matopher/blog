@@ -18,3 +18,17 @@ collections:
       - { label: 'Categories', name: 'categories', widget: 'string' }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'notes'
+    label: 'Notes'
+    folder: 'source/_notes'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'extends', widget: 'hidden', default: '_layouts.note' }
+      - { label: 'Section', name: 'content', widget: 'hidden', default: 'content' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      # - { label: 'Rating', name: 'rating', widget: 'integer' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
