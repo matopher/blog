@@ -20,7 +20,7 @@ collections:
           name: 'categories',
           widget: 'list',
           default: ['marketing'],
-          fields: ['marketing', 'software', 'video', 'podcast'],
+          field: ['marketing', 'software', 'video', 'podcast'],
         }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
