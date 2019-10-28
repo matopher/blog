@@ -18,9 +18,9 @@ collections:
       - {
           label: 'Categories',
           name: 'categories',
-          widget: 'list',
+          widget: 'select',
+          options: ['marketing', 'software', 'video', 'podcast'],
           default: ['marketing'],
-          field: ['marketing', 'software', 'video', 'podcast'],
         }
       - { label: 'Featured Image', name: 'cover_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
