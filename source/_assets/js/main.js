@@ -3,6 +3,7 @@ window.fuse = require('fuse.js');
 window.Vue = require('vue');
 
 import Search from './components/Search.vue';
+import Joke from './components/Joke.vue';
 import hljs from 'highlight.js/lib/highlight';
 
 // Syntax highlighting
@@ -19,13 +20,14 @@ hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 Vue.config.productionTip = false;
 
 new Vue({
-    components: {
-        Search,
-    },
+  components: {
+    Search,
+    Joke
+  },
 
-    mounted() {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
-    }
+  mounted() {
+    document.querySelectorAll('pre code').forEach(block => {
+      hljs.highlightBlock(block);
+    });
+  }
 }).$mount('#vue-app');
