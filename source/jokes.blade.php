@@ -11,7 +11,7 @@
 
 <section class="flex-col justify-center items-center text-center mb-20">
 
-    <h1>Dad Gags 🙃</h1>
+    <h1>Dad Gags 🤦</h1>
 
     <joke></joke>
 
