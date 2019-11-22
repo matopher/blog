@@ -1,10 +1,11 @@
 ---
 extends: _layouts.post
-section: content
 title: 22+ Free Resources for Video Creators (That I’ve Actually Used to Save Time)
-date: 2018-05-30
-description: Use these free templates, tools & time-saving tricks to crank out professional looking videos in a fraction of the time.
-categories: [video]
+date: 2018-05-30T00:00:00.000Z
+description: >-
+  Use these free templates, tools & time-saving tricks to crank out professional
+  looking videos in a fraction of the time.
+categories: video
 cover_image: /assets/img/posts/free-video-resources/feature.jpeg
 ---
 
