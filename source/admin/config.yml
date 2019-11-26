@@ -3,6 +3,11 @@ backend:
   branch: master
 media_folder: 'source/assets/img'
 public_folder: '/assets/img'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: mattwoods
+    api_key: getenv('CLOUDINARY_API_KEY')
 collections:
   - name: 'blog'
     label: 'Blog'
