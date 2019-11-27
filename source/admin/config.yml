@@ -7,7 +7,7 @@ media_library:
   name: cloudinary
   config:
     cloud_name: mattwoods
-    api_key: getenv('CLOUDINARY_API_KEY')
+    api_key: 469634645416437
 collections:
   - name: 'blog'
     label: 'Blog'
