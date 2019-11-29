@@ -6,13 +6,14 @@ date: 2019-11-29T22:33:02.699Z
 description: >-
   The Best Way to Instantly Ship Free, Blazing-Fast Websites with Serverless
   Functions in 2019
-categories: software
+categories: [software]
 cover_image: >-
   https://res.cloudinary.com/mattwoods/image/upload/v1575067153/A_Delightfully_Short_Guide_to_Static_Site_Generators_-_Cover_yf70f6.jpg
 ---
-Need to launch a quick-and-easy site for your next side-project, blog (or just as a favor for a friend?) 
 
-Before you reach for Github Pages, make sure you've considered the new generation of static site generators to streamline your development process. 
+Need to launch a quick-and-easy site for your next side-project, blog (or just as a favor for a friend?)
+
+Before you reach for Github Pages, make sure you've considered the new generation of static site generators to streamline your development process.
 
 In this talk, I take a crash course through the most exciting tools that introduce API-driven content through GraphQL and even make it a snap to add smart functionality through serverless functions.
 
