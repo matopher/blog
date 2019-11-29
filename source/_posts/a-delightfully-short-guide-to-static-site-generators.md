@@ -14,7 +14,7 @@ Need to launch a quick-and-easy site for your next side-project, blog (or just a
 
 Before you reach for Github Pages, make sure you've considered the new generation of static site generators to streamline your development process. 
 
-In this talk, I take a crash course through the most exciting tools that introduce API-driven content through GraphQL and even make it a snap to add smart functionality through severless functions.
+In this talk, I take a crash course through the most exciting tools that introduce API-driven content through GraphQL and even make it a snap to add smart functionality through serverless functions.
 
 ## [Check out the slides](https://speakerdeck.com/matopher/a-delightfully-short-guide-to-static-site-generators?slide=3)
 
