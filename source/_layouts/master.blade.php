@@ -10,7 +10,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:description" content="{{ $page->siteDescription }}" />
-        <meta property="og:image" content="/assets/img/meta.png" />
+        <meta property="og:image" content="{{ $page->cover_image ? $page->cover_image : '/assets/img/meta.png' }}" />
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
