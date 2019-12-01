@@ -54,5 +54,7 @@
         </div>
     </nav>
 
-    <script src="https://static.cruton.app/js/cruton.js" data-tags="" defer></script>
+    <script src="https://static.cruton.app/js/cruton.js" id="cruton-js" defer></script>
+    <div id="cruton-js-badge" data-tags=""></div>
+    
 @endsection
