@@ -18,6 +18,10 @@ As it turns out, there's a simple, proven formula any software developer can use
 
 I'll boil down the big ideas you need to succeed in this talk and provide a treasure trove of examples to provide a strong start in your journey to build an audience that lasts.
 
+## [Watch the video](https://www.twitch.tv/videos/518912641?t=00h25m21s)
+
+<iframe src="https://player.twitch.tv/?autoplay=false&t=00h25m21s&video=v518912641" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/videos/518912641?t=00h25m21s&tt_content=text_link&tt_medium=vod_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Watch Lightning Talks - Free Code Camp OKC from techlahoma on www.twitch.tv</a>
+
 ## [Check out the slides](https://speakerdeck.com/matopher/how-to-build-an-authentic-audience-as-a-developer)
 
 <script async class="speakerdeck-embed" data-id="faa67d90f2744be9a3950ab9bc4e3434" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
