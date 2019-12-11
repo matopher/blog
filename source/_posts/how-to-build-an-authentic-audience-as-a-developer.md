@@ -22,6 +22,10 @@ I'll boil down the big ideas you need to succeed in this talk and provide a trea
 
 <iframe src="https://player.twitch.tv/?autoplay=false&t=00h25m21s&video=v518912641" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 
+## [Listen to the podcast](https://soundcloud.com/justthegoodparts/the-secret-to-building-a-massive-audience-for-free)
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/726084922&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
 ## [Check out the slides](https://speakerdeck.com/matopher/how-to-build-an-authentic-audience-as-a-developer)
 
 <script async class="speakerdeck-embed" data-id="faa67d90f2744be9a3950ab9bc4e3434" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
