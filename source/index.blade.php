@@ -21,7 +21,7 @@
 
     <p>I'm co-founding <a href="https://okcindiehackers.com/">OKC Indie Hackers</a> to help build indie software that makes the world better.</p>
 
-    <p>Every week I review a new book and share the best learnings with the world in free <a href="/notes">book
+    <p>I review the best books I'm reading and share key learnings with the world in my free, "Just The Good Parts" <a href="/notes">book
             notes.</a></p>
 
     @include('_components.social-links')
