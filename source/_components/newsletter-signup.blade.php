@@ -3,8 +3,8 @@
     <div class="flex flex-col items-center text-center max-w-lg">
 
     <h2 class="text-3xl mb-0">Get New Book Summaries in Your Inbox</h2>
-    <p class="text-center text-lg mb-0">Every week I'll send you bite-size learnings from battle-tested books to help
-        you level-up your life and career.</p>
+    <p class="text-center text-lg mb-0">Every few weeks I'll send you bite-size learnings from battle-tested books to help
+        you level-up your life and career. You in?</p>
     
     <form
     class="w-full max-w-md mt-8"
