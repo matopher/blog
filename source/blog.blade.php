@@ -16,13 +16,13 @@ pagination:
     <h1>Articles</h1>
 
 
-    <span class="uppercase font-semibold leading-loose tracking-wide text-gray-500-900">Sort by Category</span>
+    <span class="uppercase font-semibold leading-loose tracking-wide text-gray-900">Sort by Category</span>
 
     <div class="flex-auto w-full container mb-4">
         @foreach ($page->allCategories($posts) as $category)
             <a
             href="/blog/categories/{{ $category }}"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
                 {{ $category }}
                 ({{ $page->countPostsInCategory($posts, $category) }})

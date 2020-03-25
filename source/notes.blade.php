@@ -42,7 +42,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
         </h2>
 
         <span
-            class="inline-block bg-gray-400 leading-loose tracking-wide text-gray-500-900 uppercase text-base font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 leading-loose tracking-wide text-gray-900 uppercase text-base font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             My rating: {{ $post->rating }}/5
         </span>

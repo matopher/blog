@@ -5,7 +5,7 @@
     <button
       title="Get a Joke"
       type="button"
-      class="flex bg-blue text-white font-bold hover:bg-blue-600 justify-center items-center rounded focus:outline-none h-10 px-3 mt-12"
+      class="flex bg-blue-500 text-white font-bold hover:bg-blue-500 justify-center items-center rounded focus:outline-none h-10 px-3 mt-12"
       @click="getJoke"
     >Gimme Another</button>
   </div>

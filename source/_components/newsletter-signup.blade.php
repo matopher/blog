@@ -17,7 +17,7 @@
     {{--   <input --}}
     {{--     class="bg-white border-none w-full --}}
     {{--         rounded-lg md:rounded-none md:rounded-l-lg --}}
-    {{--         text-gray-500-900 py-4 px-4 leading-tight --}}
+    {{--         text-gray-900 py-4 px-4 leading-tight --}}
     {{--         md:shadow-none shadow-lg mb-6 md:mb-0" --}}
     {{--     type="email" --}}
     {{--     placeholder="Your best email" --}}

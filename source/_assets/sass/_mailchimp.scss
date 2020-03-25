@@ -30,7 +30,7 @@
         @apply .mb-6;
         @apply .text-3xl;
         @apply .text-center;
-        @apply .text-gray-500-900;
+        @apply .text-gray-900;
     }
 }
 
@@ -59,7 +59,7 @@
 }
 
 #mc-embedded-subscribe {
-    @apply .bg-blue;
+    @apply .bg-blue-500;
     @apply .cursor-pointer;
     @apply .leading-normal;
     @apply .px-6;

@@ -21,7 +21,7 @@
           <h2 class="mb-2">martech-api</h2>
             <a
             href="https://github.com/matopher/martech-api"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             Repo
             </a>
@@ -33,7 +33,7 @@
           <h2 class="mb-2">TwentyOne</h2>
             <a
             href="https://github.com/matopher/mc-hammerhead-shark"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             Repo
             </a>
@@ -46,7 +46,7 @@
           <h2 class="mb-2">Pinboard Reader</h2>
             <a
             href="https://github.com/matopher/pinboard"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             Repo
             </a>
@@ -59,7 +59,7 @@
           <h2 class="mb-2">Spotter</h2>
             <a
             href="https://github.com/matopher/spotter"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             Repo
             </a>
@@ -72,7 +72,7 @@
           <h2 class="mb-2">random-quote-generator</h2>
             <a
             href="https://github.com/matopher/random-quote-generator"
-            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             Repo
             </a>

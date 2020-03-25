@@ -53,7 +53,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-500-900 leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans">
 
         @if ($page->production)
         <!-- Google Tag Manager (noscript) -->

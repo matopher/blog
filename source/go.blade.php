@@ -75,7 +75,7 @@
                   <input
                     class="bg-white border-none w-full
                         rounded-lg md:rounded-none md:rounded-l-lg
-                        text-gray-500-900 py-4 px-4 leading-tight
+                        text-gray-900 py-4 px-4 leading-tight
                         md:shadow-none shadow-lg mb-6 md:mb-0"
                     type="email"
                     placeholder="Your best email"
@@ -92,7 +92,7 @@
 
                   <button
                     class="w-full md:w-auto md:flex-no-shrink
-                          bg-blue hover:bg-blue-400 border-blue
+                          bg-blue-500 hover:bg-blue-400 border-blue
                           hover:border-blue-400 uppercase font-bold
                           tracking-wide border-4 text-white py-4 px-4
                           rounded-lg md:rounded-none md:rounded-r-lg
