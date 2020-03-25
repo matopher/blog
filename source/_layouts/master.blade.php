@@ -98,7 +98,7 @@
 
             @include('_components.social-links')
 
-            <ul class="flex flex-col md:flex-row justify-center list-reset">
+            <ul class="flex flex-col md:flex-row justify-center">
                 <li class="md:mr-2">
                     &copy; Matt Woods {{ date('Y') }}
                 </li>
