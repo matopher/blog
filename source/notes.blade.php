@@ -8,7 +8,7 @@ pagination:
 @push('meta')
     <meta property="og:title" content="Book Notes & Summaries - {{ $page->siteName }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/r
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
     <meta property="og:description" content="Get actionable takeaways and detailed summaries for the books I've read." />
 
 @endpush
