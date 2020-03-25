@@ -43,8 +43,8 @@
             ],
             "authors": [
                 {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
+                    "name": "not-italic Borschel",
+                    "email": "not-italic@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",

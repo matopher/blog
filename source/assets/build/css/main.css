@@ -6672,7 +6672,7 @@ main ul ol li {
   font-style: italic;
 }
 
-.roman {
+.not-italic {
   font-style: normal;
 }
 
@@ -6718,7 +6718,7 @@ main ul ol li {
   font-style: italic;
 }
 
-.hover\:roman:hover {
+.hover\:not-italic:hover {
   font-style: normal;
 }
 
@@ -6764,7 +6764,7 @@ main ul ol li {
   font-style: italic;
 }
 
-.focus\:roman:focus {
+.focus\:not-italic:focus {
   font-style: normal;
 }
 
@@ -12873,7 +12873,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .sm\:roman {
+  .sm\:not-italic {
     font-style: normal;
   }
 
@@ -12919,7 +12919,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .sm\:hover\:roman:hover {
+  .sm\:hover\:not-italic:hover {
     font-style: normal;
   }
 
@@ -12965,7 +12965,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .sm\:focus\:roman:focus {
+  .sm\:focus\:not-italic:focus {
     font-style: normal;
   }
 
@@ -19067,7 +19067,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .md\:roman {
+  .md\:not-italic {
     font-style: normal;
   }
 
@@ -19113,7 +19113,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .md\:hover\:roman:hover {
+  .md\:hover\:not-italic:hover {
     font-style: normal;
   }
 
@@ -19159,7 +19159,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .md\:focus\:roman:focus {
+  .md\:focus\:not-italic:focus {
     font-style: normal;
   }
 
@@ -25261,7 +25261,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .lg\:roman {
+  .lg\:not-italic {
     font-style: normal;
   }
 
@@ -25307,7 +25307,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .lg\:hover\:roman:hover {
+  .lg\:hover\:not-italic:hover {
     font-style: normal;
   }
 
@@ -25353,7 +25353,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .lg\:focus\:roman:focus {
+  .lg\:focus\:not-italic:focus {
     font-style: normal;
   }
 
@@ -31455,7 +31455,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .xl\:roman {
+  .xl\:not-italic {
     font-style: normal;
   }
 
@@ -31501,7 +31501,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .xl\:hover\:roman:hover {
+  .xl\:hover\:not-italic:hover {
     font-style: normal;
   }
 
@@ -31547,7 +31547,7 @@ main ul ol li {
     font-style: italic;
   }
 
-  .xl\:focus\:roman:focus {
+  .xl\:focus\:not-italic:focus {
     font-style: normal;
   }
 
