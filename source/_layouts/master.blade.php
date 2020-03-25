@@ -46,14 +46,14 @@
             </script>
 
 
-            
+
         @endif
 
         <link rel="preload" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-grey-lightest text-grey-darkest leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-500-900 leading-normal font-sans">
 
         @if ($page->production)
         <!-- Google Tag Manager (noscript) -->
@@ -69,7 +69,7 @@
                         <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                             {{-- <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" /> --}}
 
-                            <span class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0">Matt Woods</span>
+                            <span class="text-lg md:text-2xl text-blue-700est font-semibold hover:text-blue-700 my-0">Matt Woods</span>
                         </a>
                     </div>
 

@@ -201,7 +201,7 @@ It's an easy way to keep our team in the loop on our social media growth without
 
 It's not a coincidence: world-class marketing and sales teams set measurable goals to clarify their purpose and direction. It aligns their team members into a formidable force. 
 
-Suddenly, you'll stop grasping in the dark at every "growth hack" and new platform that drifts your way because you have a battle-tested system for measuring your team's true effectiveness. 
+Suddenly, you'll stop grasping in the 600 at every "growth hack" and new platform that drifts your way because you have a battle-tested system for measuring your team's true effectiveness. 
 
 Facing the hard facts of your business may not come naturally - but it doesn't matter. You'll be permanently hooked when you realize the compounding effects of a team rallied around goal-based performance. 
 

@@ -14,14 +14,14 @@
 
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">By {{ $page->author }}</p>
+    <p class="text-gray-700 text-xl md:mt-0">By {{ $page->author }}</p>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
             >{{ $category }}</a>
         @endforeach
     @endif
@@ -30,7 +30,7 @@
 
         @yield('content')
 
-        <p class="text-grey-darker text-xl md:mt-0 mb-0">Published on {{ date('F j, Y', $page->date) }}.</p>
+        <p class="text-gray-700 text-xl md:mt-0 mb-0">Published on {{ date('F j, Y', $page->date) }}.</p>
 
     </div>
 
@@ -56,5 +56,5 @@
 
     <script src="https://static.cruton.app/js/cruton.js" id="cruton-js" defer></script>
     <div id="cruton-js-badge" data-tags=""></div>
-    
+
 @endsection

@@ -4,11 +4,11 @@
         <a
         href="{{ $post->getUrl() }}"
         title="Read more - {{ $post->title }}"
-        class="text-black font-extrabold"
+        class="text-gray-900 font-extrabold"
         >
-            <img 
-            src="{{ $post->cover_image }}" 
-            alt="{{ $post->title }} cover image" class="mb-2 w-full" 
+            <img
+            src="{{ $post->cover_image }}"
+            alt="{{ $post->title }} cover image" class="mb-2 w-full"
 
             @if ($constrain_image_to_grid)
                 style="max-height: 10rem; max-height: 10rem; object-fit: cover; object-position: center;"
@@ -23,7 +23,7 @@
                 <a
                     href="{{ '/blog/categories/' . $category }}"
                     title="View posts in {{ $category }}"
-                    class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                    class="inline-block bg-gray-400 hover:bg-blue-200 leading-loose tracking-wide text-gray-500-900 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
                 >{{ $category }}</a>
             @endforeach
         @endif
@@ -33,7 +33,7 @@
         <a
             href="{{ $post->getUrl() }}"
             title="Read more - {{ $post->title }}"
-            class="text-black font-extrabold"
+            class="text-gray-900 font-extrabold"
         >{{ $post->title }}</a>
     </h2>
 

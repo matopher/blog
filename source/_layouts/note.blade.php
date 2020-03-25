@@ -21,7 +21,7 @@
 
             <div class="inline-flex">
                 <span
-                class="inline-block leading-loose tracking-wide bg-grey-light text-grey-darkest uppercase text-sm
+                class="inline-block leading-loose tracking-wide bg-gray-400 text-gray-500-900 uppercase text-sm
                 font-semibold rounded mr-4 px-3"
                     >
                     My Rating: {{ $page->rating }}/5

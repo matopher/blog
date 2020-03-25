@@ -8,9 +8,9 @@ pagination:
 @push('meta')
     <meta property="og:title" content="Book Notes & Summaries - {{ $page->siteName }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+    <meta property="og:url" content="{{ $page->getUrl() }}"/r
     <meta property="og:description" content="Get actionable takeaways and detailed summaries for the books I've read." />
-    
+
 @endpush
 
 @push('title')
@@ -42,7 +42,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
         </h2>
 
         <span
-            class="inline-block bg-grey-light leading-loose tracking-wide text-grey-darkest uppercase text-base font-semibold rounded mr-4 my-2 px-3 pt-px"
+            class="inline-block bg-gray-400 leading-loose tracking-wide text-gray-500-900 uppercase text-base font-semibold rounded mr-4 my-2 px-3 pt-px"
             >
             My rating: {{ $post->rating }}/5
         </span>
@@ -58,7 +58,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
         >
             Read Notes →
         </a>
-        
+
 
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
@@ -71,7 +71,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
                 <a
                     href="{{ $previous }}"
                     title="Previous Page"
-                    class="bg-grey-lighter hover:bg-grey-light rounded mr-3 px-5 py-3"
+                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
                 >&LeftArrow;</a>
             @endif
 
@@ -79,7 +79,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
                 <a
                     href="{{ $path }}"
                     title="Go to Page {{ $pageNumber }}"
-                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-dark' : '' }}"
+                    class="bg-gray-200 hover:bg-gray-400 text-blue-700er rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-700' : '' }}"
                 >{{ $pageNumber }}</a>
             @endforeach
 
@@ -87,7 +87,7 @@ Summaries, Notes, and Reviews from Books I've Read | {{ $page->siteName }}
                 <a
                     href="{{ $next }}"
                     title="Next Page"
-                    class="bg-grey-lighter hover:bg-grey-light rounded mr-3 px-5 py-3"
+                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
                 >&RightArrow;</a>
             @endif
         </nav>

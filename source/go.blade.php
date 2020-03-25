@@ -59,13 +59,13 @@
         <p>- Matt & M’Kaylah Woods</p>
 
         {{-- Email Signup --}}
-        <div class="flex justify-center lg:-mx-12 my-12 py-12 p-6 md:px-12 bg-grey-lighter border border-grey-light text-sm md:rounded shadow">
+        <div class="flex justify-center lg:-mx-12 my-12 py-12 p-6 md:px-12 bg-gray-200 border border-gray-400 text-sm md:rounded shadow">
 
                 <div class="flex flex-col items-center text-center max-w-lg">
-            
+
                 <h2 class="text-3xl mb-0">Get email updates for our Peru Trip</h2>
                 <p class="text-center text-lg mb-0"> We’ll be sending email updates with prayer points leading up to the trip, ways we’re excited for God to use us in Peru, and testimonies of people encountering Jesus after we get home.</p>
-                
+
                 <form
                 class="w-full max-w-md mt-8"
                 action="https://mattwoodscreative.us10.list-manage.com/subscribe/post"
@@ -75,7 +75,7 @@
                   <input
                     class="bg-white border-none w-full
                         rounded-lg md:rounded-none md:rounded-l-lg
-                        text-grey-darkest py-4 px-4 leading-tight
+                        text-gray-500-900 py-4 px-4 leading-tight
                         md:shadow-none shadow-lg mb-6 md:mb-0"
                     type="email"
                     placeholder="Your best email"
@@ -86,14 +86,14 @@
                     autocapitalize="off"
                     autocorrect="off"
                   />
-            
+
                   <input type="hidden" name="u" value="d9c73c89d2fc8dcb8b42ab6d0">
                   <input type="hidden" name="id" value="3957e2af21">
-            
+
                   <button
                     class="w-full md:w-auto md:flex-no-shrink
-                          bg-blue hover:bg-blue-light border-blue
-                          hover:border-blue-light uppercase font-bold
+                          bg-blue hover:bg-blue-400 border-blue
+                          hover:border-blue-400 uppercase font-bold
                           tracking-wide border-4 text-white py-4 px-4
                           rounded-lg md:rounded-none md:rounded-r-lg
                           text-base md:shadow-none shadow-lg"
@@ -105,17 +105,17 @@
               </form>
                 <small class="pt-2">No spam. Unsubscribe anytime.</small>
             </div>
-            
+
             </div>
-            
+
             @push('scripts')
                 <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                 <script>(function($) {
                     window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
                 </script>
             @endpush
-            
-            
+
+
 
       </div>
 @endsection

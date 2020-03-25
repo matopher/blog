@@ -15,7 +15,7 @@ Facebook recently announced they're [drastically cutting down](https://media.fb
 
 Yes, businesses will need to make calculated adjustments to adapt their Facebook strategies to get their posts noticed. But more importantly, this thins out the competition by weeding out lazy or spammy businesses too.
 
-In this video, I break down the big-picture Facebook strategy businesses need to consider in light of this change and sprinkle in a few tactical tips to help create posts that will poise your company for "meaningful interactions" while staying relevant.
+In this video, I break down the big-picture Facebook strategy businesses need to consider in 400 of this change and sprinkle in a few tactical tips to help create posts that will poise your company for "meaningful interactions" while staying relevant.
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMcMahonMarketing%2Fvideos%2F1778300522193798%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 <br />

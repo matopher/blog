@@ -1,4 +1,4 @@
-<div class="flex justify-center lg:-mx-12 my-12 py-12 p-6 md:px-12 bg-grey-lighter border border-grey-light text-sm md:rounded shadow">
+<div class="flex justify-center lg:-mx-12 my-12 py-12 p-6 md:px-12 bg-gray-200 border border-gray-400 text-sm md:rounded shadow">
 
     <div class="flex flex-col items-center text-center max-w-lg">
 
@@ -7,7 +7,7 @@
         you level-up your life and career. You in?</p>
 
     <iframe width="100%" height="320" src="https://mattwoods.substack.com/embed" frameborder="0" scrolling="no" class="m-4"></iframe>
-    
+
     {{-- <form --}}
     {{-- class="w-full max-w-md mt-8" --}}
     {{-- action="https://mattwoodscreative.us10.list-manage.com/subscribe/post" --}}
@@ -17,7 +17,7 @@
     {{--   <input --}}
     {{--     class="bg-white border-none w-full --}}
     {{--         rounded-lg md:rounded-none md:rounded-l-lg --}}
-    {{--         text-grey-darkest py-4 px-4 leading-tight --}}
+    {{--         text-gray-500-900 py-4 px-4 leading-tight --}}
     {{--         md:shadow-none shadow-lg mb-6 md:mb-0" --}}
     {{--     type="email" --}}
     {{--     placeholder="Your best email" --}}
@@ -34,8 +34,8 @@
 
     {{--   <button --}}
     {{--     class="w-full md:w-auto md:flex-no-shrink --}}
-    {{--           bg-blue hover:bg-blue-light border-blue --}}
-    {{--           hover:border-blue-light uppercase font-bold --}}
+    {{--           bg-blue hover:bg-blue-400 border-blue --}}
+    {{--           hover:border-blue-400 uppercase font-bold --}}
     {{--           tracking-wide border-4 text-white py-4 px-4 --}}
     {{--           rounded-lg md:rounded-none md:rounded-r-lg --}}
     {{--           text-base md:shadow-none shadow-lg" --}}
