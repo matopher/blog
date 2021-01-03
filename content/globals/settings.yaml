@@ -1,17 +1,14 @@
 id: 9242876a-41c4-42f8-96f8-ac92d6025406
 title: Settings
 data:
-  site_name: 'Cool Writings'
+  site_name: "Matt Woods"
   social:
-    -
-      name: Twitter
-      url: 'https://twitter.com/jackmcdade'
+    - name: Twitter
+      url: "https://twitter.com/matopher"
       icon: site/social-icons/twitter.svg
-    -
-      name: Github
-      url: 'https://github.com/statamic/starter-kit-cool-writings'
+    - name: Github
+      url: "https://github.com/matopher"
       icon: site/social-icons/github.svg
-    -
-      name: Email
-      url: 'mailto:jack@statamic.com'
+    - name: Email
+      url: "mailto:howdy@mattwoods.io"
       icon: site/social-icons/email.svg
