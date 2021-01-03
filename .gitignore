@@ -1,10 +1,15 @@
-/build_local/
-/build_staging/
-/build_production/
-/node_modules/
-/vendor/
-.DS_Store
+/node_modules
+/public/hot
+/public/storage
+/public/vendor/statamic
+/storage/*.key
+/vendor
 .env
-
-# Local Netlify folder
-.netlify
+.env.backup
+.phpunit.result.cache
+.php_cs.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.DS_Store
