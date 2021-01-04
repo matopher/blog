@@ -1,4 +1,3 @@
-title: 'Global Settings'
 sections:
   main:
     display: Main
@@ -8,7 +7,6 @@ sections:
         field:
           character_limit: 0
           type: text
-          localizable: false
           display: 'Site Name'
       -
         handle: social
@@ -44,5 +42,17 @@ sections:
           reorderable: true
           type: grid
           instructions: 'Set any social media links'
-          localizable: false
           display: Social
+      -
+        handle: meta_image
+        field:
+          mode: grid
+          container: assets
+          folder: site
+          restrict: false
+          allow_uploads: true
+          display: 'Meta Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          max_files: 1

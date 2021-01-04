@@ -50,6 +50,7 @@ sections:
           icon: assets
           listable: true
           folder: content/notes
+          max_files: 1
       -
         handle: date
         field:

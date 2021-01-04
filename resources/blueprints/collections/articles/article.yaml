@@ -57,6 +57,7 @@ sections:
           type: assets
           icon: assets
           listable: true
+          max_files: 1
       -
         handle: excerpt
         field:
