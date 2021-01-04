@@ -22,5 +22,5 @@ data:
       name: LinkedIn
       url: 'https://www.linkedin.com/in/matthewchristopherwoods'
       icon: site/social-icons/linkedin.svg
-  meta_image:
-    - site/meta.png
+  meta_image: site/meta.png
+  favicon: site/favicon.ico

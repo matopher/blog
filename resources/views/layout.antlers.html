@@ -8,6 +8,7 @@
         <meta name="description" content="{{ excerpt ?? title }}" />
         <meta name="theme-color" content="00908F" />
         {{ partial:opengraph }}
+        <link rel="icon" href="{{ settings:favicon:url }}" />
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}" />
         <script src="{{ mix src='/js/site.js' }}"></script>
         {{ partial:analytics }}
