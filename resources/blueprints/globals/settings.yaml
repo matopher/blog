@@ -69,3 +69,13 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+      -
+        handle: description
+        field:
+          character_limit: '160'
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          instructions: 'A generic, fallback description for metadata.'
+          listable: hidden

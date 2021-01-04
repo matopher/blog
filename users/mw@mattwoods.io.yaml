@@ -1,5 +1,6 @@
 name: Matt
 super: true
+avatar: site/matt-square.jpeg
 id: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
 password_hash: $2y$10$3ozXw.W8K6X.fzYeor17X.gD6Sic9xDwX0.3.TQC.cG8hJIEfB262
 preferences:
