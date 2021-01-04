@@ -57,7 +57,7 @@ h1 {
     } */
 
     ol {
-        @apply pl-0 list-decimal ml-10 mb-6 text-lg;
+        @apply pl-0 list-decimal ml-0 mb-6 text-lg;
         > li {
             @apply mb-1;
         }

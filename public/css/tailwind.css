@@ -688,7 +688,7 @@ h1 {
 .content ol {
     padding-left: 0;
     list-style-type: decimal;
-    margin-left: 2.5rem;
+    margin-left: 0;
     margin-bottom: 1.5rem;
     font-size: 1.125rem;
   }
