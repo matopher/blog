@@ -1,5 +1,5 @@
 title: Notes
-template: articles/show
+template: notes/show
 layout: layout
 revisions: false
 route: '/notes/{slug}'
