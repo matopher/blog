@@ -7,7 +7,10 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           display: Title
+          validate:
+            - required
       -
         handle: content
         field:
@@ -19,14 +22,52 @@ sections:
           escape_markup: false
           smartypants: false
       -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: cover_image
+        field:
+          mode: grid
+          container: assets
+          folder: content/articles
+          restrict: false
+          allow_uploads: true
+          display: 'Cover Image'
+          type: assets
+          icon: assets
+          listable: true
+      -
         handle: excerpt
         field:
           type: textarea
           display: Excerpt
           character_limit: 160
       -
-        handle: author
+        handle: topics
         field:
-          type: users
-          display: Author
-          default: current
+          type: terms
+          taxonomies:
+            - topics
+          display: Topics
+          mode: select
