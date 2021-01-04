@@ -6,12 +6,15 @@
     property="og:description"
     content="{{ excerpt ?? settings:description }}"
 />
+<meta property="og:locale" content="en_US" />
 <meta property="og:image" content="{{ glide:settings:meta_image width="1200"
 height="630" format="jpg"}}" />
-<meta property="og:locale" content="en_US" />
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="Matt Woods" />
 <meta name="twitter:creator" content="matopher" />
 <meta name="twitter:domain" content="mattwoods.io" />
+{{ if current_uri === "/"}} {{ glide:image src="/assets/site/matt.jpeg"
+width="1200" height="630" format="jpg"}} <meta property="og:image" content="{{
+url }}" {{ /glide:image }} {{ /if }}
