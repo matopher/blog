@@ -7,18 +7,43 @@
             {{ content | widont }}
         </header>
 
-        {{ collection:notes as="notes" paginate="10" }} {{ if no_results }}
+        {{ collection:notes as="notes" sort="rating:desc" paginate="20" }} {{ if
+        no_results }}
         <h2 class="text-3xl italic tracking-tight">
             Oops! Nothing found for that yet...
         </h2>
-        {{ /if }} {{ notes }}
-        <div class="mb-2">
+        {{ /if }} {{ notes }} {{ if cover_image }}
+        <a href="{{ url }}">
+            {{ cover_image }}
+            <img src="{{ url}}" alt="{{ alt }}" class="mb-2 mr-2 h-48" />
+            {{ /cover_image }}
+        </a>
+        {{ /if }}
+
+        <div class="my-10">
             <a
                 href="{{ url }}"
-                class="text-lg hover:text-teal tracking-tight leading-tight font-bold"
+                class="text-2xl hover:text-teal tracking-tight leading-tight font-bold"
             >
                 {{ title | widont }}
             </a>
+
+            <div class="block my-2">
+                <span
+                    class="inline-block leading-loose tracking-wide bg-gray-300 text-gray-700 text-sm uppercase 
+                font-semibold rounded px-3"
+                >
+                    Rating: {{ rating }}/5
+                </span>
+            </div>
+
+            <p>
+                {{ excerpt }}
+            </p>
+
+            {{ if not last}}
+            <hr class="border-b my-6" />
+            {{ /if }}
         </div>
         {{ /notes }} {{ paginate }} {{ if prev_page || next_page }}
         <div class="flex justify-between text-xl -mx-16 pt-16 font-bold">
