@@ -1,0 +1,10 @@
+title: Notes
+template: articles/show
+layout: layout
+revisions: false
+route: '/notes/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
