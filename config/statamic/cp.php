@@ -38,10 +38,15 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
         [
             'type' => 'collection',
             'collection' => 'articles',
+            'width' => 50,
+            'limit' => 10
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'notes',
             'width' => 50,
             'limit' => 10
         ],
