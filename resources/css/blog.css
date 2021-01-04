@@ -1,4 +1,4 @@
-article .content li {
+.content li {
     margin-top: 2px;
     margin-bottom: 14px;
     padding-left: 3px;
@@ -6,8 +6,8 @@ article .content li {
     line-height: 26px;
 }
 
-article .content ol,
-article .content ul {
+.content ol,
+.content ul {
     @apply my-5;
     @apply py-4;
     @apply px-10;
@@ -19,22 +19,22 @@ article .content ul {
     box-shadow: 0 5px 15px -10px rgba(0, 89, 156, 0.16);
 }
 
-article .content ol ol,
-article .content ol ul,
-article .content ul ol,
-article .content ul ul {
+.content ol ol,
+.content ol ul,
+.content ul ol,
+.content ul ul {
     @apply pt-2;
     @apply px-8;
     box-shadow: none;
     margin: 0;
 }
 
-article .content ul,
+.content ul,
 ol > li {
     @apply mb-0;
 }
 
-article .content ul li::before {
+.content ul li::before {
     content: " ";
     display: block;
     position: relative;

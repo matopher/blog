@@ -5575,7 +5575,7 @@ h1 {
   z-index: auto !important;
 }
 
-article .content li {
+.content li {
   margin-top: 2px;
   margin-bottom: 14px;
   padding-left: 3px;
@@ -5583,8 +5583,8 @@ article .content li {
   line-height: 26px;
 }
 
-article .content ol,
-article .content ul {
+.content ol,
+.content ul {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   padding-top: 1rem;
@@ -5599,10 +5599,10 @@ article .content ul {
   box-shadow: 0 5px 15px -10px rgba(0, 89, 156, 0.16);
 }
 
-article .content ol ol,
-article .content ol ul,
-article .content ul ol,
-article .content ul ul {
+.content ol ol,
+.content ol ul,
+.content ul ol,
+.content ul ul {
   padding-top: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -5610,12 +5610,12 @@ article .content ul ul {
   margin: 0;
 }
 
-article .content ul,
+.content ul,
 ol > li {
   margin-bottom: 0;
 }
 
-article .content ul li::before {
+.content ul li::before {
   content: " ";
   display: block;
   position: relative;
