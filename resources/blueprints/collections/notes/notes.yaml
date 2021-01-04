@@ -1,0 +1,78 @@
+title: Notes
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: rating
+        field:
+          step: 1
+          min: 0
+          max: 5
+          default: 3
+          display: Rating
+          type: range
+          icon: range
+          instructions: 'Provide a rating from 1-5.'
+          listable: hidden
+      -
+        handle: cover_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          display: 'Cover Image'
+          type: assets
+          icon: assets
+          listable: true
+          folder: content/notes
+          max_files: 1
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          input_type: text
+          antlers: false
+          display: Author
+          type: text
+          icon: text
+          listable: true
+      -
+        handle: excerpt
+        field:
+          character_limit: '160'
+          antlers: false
+          display: Excerpt
+          type: textarea
+          icon: textarea
+          listable: hidden
