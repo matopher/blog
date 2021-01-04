@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 body {
     @apply text-gray-800;
@@ -49,12 +49,12 @@ h1 {
         }
     }
 
-    ul:not(.list-none) {
+    /* ul:not(.list-none) {
         @apply pl-0 list-disc ml-10 mb-6 text-lg;
         li {
             @apply mb-1;
         }
-    }
+    } */
 
     ol {
         @apply pl-0 list-decimal ml-10 mb-6 text-lg;
@@ -71,11 +71,17 @@ h1 {
         @apply inline-block bg-gray-800 text-white text-sm p-1 leading-none whitespace-no-wrap font-mono align-baseline;
     }
 
-    > pre, pre&, > ul li pre, > ol li pre {
+    > pre,
+    pre&,
+    > ul li pre,
+    > ol li pre {
         @apply flex p-0 bg-gray-800 text-gray-300 text-sm leading-loose mb-6;
     }
 
-    > pre code, pre code&, > ul li pre code, > ol li pre code {
+    > pre code,
+    pre code&,
+    > ul li pre code,
+    > ol li pre code {
         @apply p-4;
     }
 
@@ -92,9 +98,8 @@ h1 {
         p {
             @apply leading-normal;
         }
-  }
+    }
 }
-
 
 /* Responsive Wangjangling */
 @screen lg {
