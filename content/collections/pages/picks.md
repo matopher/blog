@@ -1,7 +1,7 @@
 ---
 title: Picks
 updated_by: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-updated_at: 1609908372
+updated_at: 1609910003
 blueprint: page
 id: 6d0c6908-95e2-4c45-ac36-201ef5429a60
 ---
@@ -58,10 +58,8 @@ I use affiliate links for Amazon products so I can buy more cool stuff to review
 
 📧 Newsletters
 -----------
-* [Lenny's Newsletter](https://www.lennyrachitsky.com/) — Top notch product and growth advice from someone who's actually done the work as one of Airbnb's lead product managers. If you build software,  it's an incredible value. The Slack community for members is also uncommonly strong.
+* [Lenny's Newsletter](https://www.lennyrachitsky.com/) — Top notch product and growth advice from someone who's actually done the work as one of Airbnb's lead product managers. If you build software,  it's an incredible value.
 * [Nat Eliason's Monday Medley](https://www.nateliason.com/join) —  Nat's an undeniably fascinating renaissance thinker. Regenerative farming? Groundbreaking note-taking systems? The hidden perils of virtual reality? Every week he serves up delightful commentary on a couple handfuls of links on wildly different topics. And it's always good.
-* [DG's Marketing Group](https://www.patreon.com/davegerhardt) — Plainspoken marketing advice from a natural brand-builder who's built-up marketing teams at Drift and Privy.
-* [Some Good Content by John Bonini](https://www.patreon.com/somegoodcontent) — Practical content marketing advice that's anything but cookie-cutter. John has produced an incredible output of content at Databox on a shoestring budget. He provides an inside look at the principles that make it possible for him to punch above his weight.
 * [Product Habits by Hiten Shah](https://producthabits.com/) — The highest value-per-link newsletter I've found focused on SaaS, Product, and Marketing.
 * [NextDraft](https://nextdraft.com/) — A witty, irreverent daily editorial summary of current news and events by Dave Pell. Love puns? You can't help but fall head-over-heels for his headlines.
 * [Stratechery](https://stratechery.com/) — Ben Thompson expertly dissects the strategic decisions of technology giants like Amazon, Apple, and Facebook. His writing via Daily Updates and weekly free articles has been remarkably consistent, fresh, and valuable for anyone who thinks about technology. 
@@ -70,6 +68,12 @@ I use affiliate links for Amazon products so I can buy more cool stuff to review
 * [Ryan Singer](https://mailchi.mp/hey/ryans-newsletter) — Deeply thoughtful and unconventional thinking on building software products by Basecamp's head of strategy.
 * [Exploding Topics](https://explodingtopics.com/) — Get 4 new trends that are surging in popularity in search engines like Google every Thursday. You'll enjoy just enough bite-size commentary to decide whether the trend is worth digging into and incorporating into your next blog post or product concept.
 * [Trends.vc](https://join.trends.vc/) — It's like having a seasoned entrepreneur's virtual assistant plop a no-fluff report on an emerging area of opportunity every week. Previous topics include micro-marketplaces, remote work, and paid communities. Expect a format that's biased toward action by clearly outlining the problem, solution, competitors, predictions, key lessons, and helpful links.
+
+💸 Paid Communities
+-----------
+* [Lenny's Newsletter](https://www.lennyrachitsky.com/) — If you love the free occassional newsletter, you'll absolutely love the value you unlock by paying for the extra content and community access. The Slack community for members is uncommonly strong.
+* [DG's Marketing Group](https://www.patreon.com/davegerhardt) — Plainspoken marketing advice from a natural brand-builder who's built-up marketing teams at Drift and Privy.
+* [Some Good Content by John Bonini](https://www.patreon.com/somegoodcontent) — Practical content marketing advice that's anything but cookie-cutter. John has produced an incredible output of content at Databox on a shoestring budget. He provides an inside look at the principles that make it possible for him to punch above his weight.
 
 🎧 Podcasts
 -----------
