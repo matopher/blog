@@ -10,6 +10,8 @@ id: home
 ---
 # I'm a curious learning machine who loves growing Internet businesses.
 
-Currently, I'm a Product Manager at [Tailwind](https://tailwindapp.com).
+Currently, I'm a Product Manager at [Coda](https://coda.io/).
+
+Previously, I worked on product & growth at [Tailwind](https://tailwindapp.com).
 
 I review the best books I'm reading and share key learnings with the world in my free, "Just The Good Parts" [book notes.](/notes)
