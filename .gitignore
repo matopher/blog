@@ -1,15 +1,13 @@
-/node_modules
-/public/hot
-/public/storage
-/public/vendor/statamic
-/storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-.php_cs.cache
-Homestead.json
-Homestead.yaml
+/build_local/
+/cache/
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
+/.DS_Store
 npm-debug.log
-yarn-error.log
-.DS_Store
+
+# Optional ignores
+# /build_staging/
+# /build_production/
+# /source/assets/build/
