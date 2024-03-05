@@ -19,6 +19,7 @@ return [
                 return collect($articles)->map(function ($article) {
                     return [
                         'title' => $article['title'],
+                        'date_published' => $article['date_published'],
                         'content' => $article['content'],
 
                     ];
@@ -75,12 +76,12 @@ function getArticles() {
     $results = collect($articles)->map(function ($article) {
         return [
             'title' => $article['title'],
-            'date_published' => $article['date_published'],
+            'date_published' => formatDate($article['date_published']),
             'content' => BlockContent::toHtml($article['content']),
         ];
     });
 
-    // dd($result);
+    // dd($results);
 
     return $results;
 }
