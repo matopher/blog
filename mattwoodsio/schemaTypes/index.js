@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import pet from '../schemas/pet'
+
+export const schemaTypes = [pet]
