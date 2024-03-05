@@ -1,5 +1,6 @@
 {
     "require": {
-        "tightenco/jigsaw": "^1.7"
+        "tightenco/jigsaw": "^1.7",
+        "sanity/sanity-php": "^1.5"
     }
 }
