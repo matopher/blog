@@ -2,6 +2,7 @@
 
 use Carbon\Carbon;
 
-function formatDate($date) {
+function formatDate($date)
+{
     return Carbon::createFromFormat('Y-m-d', $date)->format('F j, Y');
 }
