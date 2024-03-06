@@ -3,6 +3,8 @@
 use TightenCo\Jigsaw\Jigsaw;
 use Sanity\Client as SanityClient;
 
+require_once './sanity.php';
+
 /** @var \Illuminate\Container\Container $container */
 /** @var \TightenCo\Jigsaw\Events\EventBus $events */
 
@@ -17,18 +19,8 @@ use Sanity\Client as SanityClient;
  * });
  */
 
- $events->beforeBuild(function (Jigsaw $jigsaw) {
-    $client = new SanityClient([
-        'projectId' => '5c0nx2sc',
-        'dataset' => 'production',
-        'useCdn' => true,
-        'apiVersion' => '2024-03-04',
-      ]);
-      
-      $results = $client->fetch(
-          '*[_type == "pet"]',
-        );
+$events->beforeBuild(function (Jigsaw $jigsaw) {
+    $articlePaths = getArticlePaths();
 
-        // var_dump($results);
-        $jigsaw->setConfig('remotePets', $results);
- });
+    $jigsaw->setConfig('articlePaths', $articlePaths);
+});
