@@ -21,6 +21,8 @@ require_once './sanity.php';
 
 $events->beforeBuild(function (Jigsaw $jigsaw) {
     $articlePaths = getArticlePaths();
+    $articles = getArticles();
 
     $jigsaw->setConfig('articlePaths', $articlePaths);
+    $jigsaw->setConfig('articles', $articles);
 });

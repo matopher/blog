@@ -14,6 +14,7 @@ return [
     'collections' => [
         'articles' => [
             'extends' => '_layouts.article',
+            'paths' => getArticlePaths(),
             'items' => function ($config) {
 
                 $articles = getArticles();
@@ -42,21 +43,3 @@ return [
         ]
     ],
 ];
-
-// return [
-//     2    'collections' => [
-//     3        'posts' => [
-//     4            'extends' => '_layouts.post',
-//     5            'items' => function ($config) {
-//     6                $posts = json_decode(file_get_contents('https://jsonplaceholder.typicode.com/posts'));
-//     7
-//     8                return collect($posts)->map(function ($post) {
-//     9                    return [
-//    10                        'title' => $post->title,
-//    11                        'content' => $post->body,
-//    12                    ];
-//    13                });
-//    14            },
-//    15        ],
-//    16    ],
-//    17];
