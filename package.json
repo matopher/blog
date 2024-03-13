@@ -1,26 +1,38 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-    },
-    "devDependencies": {
-        "autoprefixer": "^9.6.1",
-        "cross-env": "^5.1",
-        "laravel-mix": "^5.0",
-        "laravel-mix-purgecss": "^5.0.0",
-        "postcss-import": "^12.0.1",
-        "postcss-nested": "^4.1.2",
-        "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^1.1.2",
-        "vue-template-compiler": "^2.6.11"
-    },
-    "dependencies": {
-        "alpinejs": "^1.9.2"
-    }
+  "name": "tailwindui-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": "defaults, not ie <= 11",
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@mapbox/rehype-prism": "^0.9.0",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.4",
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.12",
+    "cheerio": "^1.0.0-rc.12",
+    "clsx": "^2.1.0",
+    "fast-glob": "^3.2.11",
+    "feed": "^4.2.2",
+    "next": "^14.0.4",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remark-gfm": "^4.0.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "sharp": "0.33.1"
+  }
 }
