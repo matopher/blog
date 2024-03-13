@@ -36,42 +36,21 @@ export default function Speaking() {
       intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
     >
       <div className="space-y-20">
-        <SpeakingSection title="Conferences">
+        <SpeakingSection title="Writing">
           <Appearance
-            href="#"
-            title="In space, no one can watch you stream — until now"
-            description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-            event="SysConf 2021"
-            cta="Watch video"
-          />
-          <Appearance
-            href="#"
-            title="Lessons learned from our first product recall"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Business of Startups 2020"
-            cta="Watch video"
+            href="https://coda.io/blog/product-teams/how-i-discover-hidden-user-problems"
+            title="How to discover hidden user problems"
+            description="Drawing upon my experience as a former growth marketer, I put my own spin on the “marketing funnel” to create an always-on “research funnel.”"
+            event="Coda blog, 2023"
+            cta="Read article"
           />
         </SpeakingSection>
         <SpeakingSection title="Podcasts">
           <Appearance
-            href="#"
-            title="Using design as a competitive advantage"
-            description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-            event="Encoding Design, July 2022"
-            cta="Listen to podcast"
-          />
-          <Appearance
-            href="#"
-            title="Bootstrapping an aerospace company to $17M ARR"
-            description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-            event="The Escape Velocity Show, March 2022"
-            cta="Listen to podcast"
-          />
-          <Appearance
-            href="#"
-            title="Programming your company operating system"
-            description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-            event="How They Work Radio, September 2021"
+            href="https://katesyuma.substack.com/p/unlocking-activation-at-coda-and"
+            title="Unlocking Activation at Coda and Building Trust Between PMs and Designers"
+            description="This time we talked to Matt Woods, a Product Manager focused on Product-led Growth, who helped companies like Coda increase key activation metrics by 60%, and introduce personalization experience that combines great UX and business impact."
+            event="Growthmates, March 2024"
             cta="Listen to podcast"
           />
         </SpeakingSection>
