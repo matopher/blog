@@ -27,11 +27,11 @@ const projects = [
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'New Podcast',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'Coming soon: A new podcast about inspiring stories and ideas in climate tech.',
+    link: { href: '#', label: 'Coming soon' },
+    logo: logoAnimaginary,
   },
 ]
 
@@ -48,14 +48,15 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description:
+    "I'm usually tinkering with a side project or two. Check out a few recent ones.",
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Projects"
+      intro="I'm usually tinkering with a side project or two. Check out a few recent ones."
     >
       <ul
         role="list"

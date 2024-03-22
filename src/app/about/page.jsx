@@ -65,6 +65,26 @@ export default function About() {
               I'm a proven product manager focused on 10x impact through
               product-led growth.
             </p>
+            <p>
+              I'm infinitely curious about the principles, frameworks & levers
+              that set the top 1% of Internet businesses apart.
+            </p>
+            <p>
+              I'm constantly curious about people, technology, and how to unlock
+              more creative, thoughtful solutions that make the world a more
+              loving place.
+            </p>
+            <p>
+              I recently jumped into the world of Real Estate tech to build the
+              marketing operating system that *should* exist with the
+              terrifically knowledgable and kind team at{' '}
+              <a
+                className="text-teal-500 dark:text-teal-400"
+                href="https://digible.com/"
+              >
+                Digible.
+              </a>
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
