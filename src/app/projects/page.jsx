@@ -10,17 +10,20 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Reforge Artifacts',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'I shared a dozen examples of my hands-on work as one of the first contributors.',
+    link: {
+      href: 'https://www.reforge.com/profiles/matt-woods',
+      label: 'reforge.com/artifacts',
+    },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: "Patrick Collison's Bookshelf",
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      "Stripe's polymath co-founder and avid reader keeps a robust list of 560+ recommended books. I organized them into into an enriched, filterable collection that's easier to digest.",
+    link: { href: '#', label: 'collisonbookshelf.com' },
     logo: logoAnimaginary,
   },
   {
@@ -29,20 +32,6 @@ const projects = [
       'Real-time video streaming library, optimized for interstellar transmission.',
     link: { href: '#', label: 'github.com' },
     logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
   },
 ]
 
