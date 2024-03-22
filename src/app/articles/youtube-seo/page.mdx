@@ -1,17 +1,23 @@
----
-title: 'Get Your Video Ranked in YouTube Search With These Simple SEO Techniques'
-author:
-  - 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-excerpt: 'YouTube = the world''s 2nd largest search engine. Want to rank number-one? Start with these quick wins to claim the top spot.'
-topics:
-  - video
-updated_by: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-updated_at: 1609738821
-id: d53ccdee-7ea8-4e8e-a018-69ebd66e2bb2
----
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2017-07-12',
+  title: 'Get Your Video Ranked in YouTube Search With These Simple SEO Techniques',
+  description:
+    'YouTube = The 2nd largest search engine in the world. Want to rank number-one? Start with these quick wins to claim the top spot.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
 ## How should you research keywords to rank your video for more views?
 
-- Use Youtube suggest to find long tail keywords (and use "\_" character to find words BEFORE.
+- Use Youtube suggest to find long tail keywords (and use the `_` character to find words BEFORE.)
 - TubeBuddy for competitor tag research
 - Tubular Labs for competitive research
 - YTCockpit shows avg video length for given keyword. Helps you avoid keywords with a packed 1st page of high-quality videos.

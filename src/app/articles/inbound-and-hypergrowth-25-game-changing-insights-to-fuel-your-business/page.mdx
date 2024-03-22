@@ -1,14 +1,20 @@
----
-title: 'Inbound & Hypergrowth: 25 Game-Changing Insights to Fuel Your Business'
-author:
-  - 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-excerpt: 'I’ve distilled the most actionable, valuable insights from two conferences into 25 bite-sized nuggets you can start leveraging today to grow your business.'
-topics:
-  - marketing
-updated_by: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-updated_at: 1609727463
-id: c1300bb3-1f1c-43d9-9ab8-1af6e278e190
----
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2017-10-18',
+  title: 'Inbound & Hypergrowth: 25 Game-Changing Insights to Fuel Your Business',
+  description:
+    'I’ve distilled the most actionable, valuable insights from two conferences into 25 bite-sized nuggets you can start leveraging today to grow your business.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
 Have you ever tried to drink from a fire hydrant? 
 
 I haven't personally, but I think I caught a faint glimpse after attending --- not one --- but **two** back-to-back marketing conferences in Boston this year: Hypergrowth and Inbound.

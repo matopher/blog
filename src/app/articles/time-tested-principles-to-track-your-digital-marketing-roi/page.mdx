@@ -1,14 +1,20 @@
----
-title: '5 Time-Tested Principles to Track Your Digital Marketing ROI'
-author:
-  - 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-excerpt: 'Which marketing channels made you the most money yesterday,  last week, or last month? ...No clue? You need a solid ROI tracking plan for your business.'
-topics:
-  - marketing
-updated_by: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-updated_at: 1609727648
-id: 50133b9b-8d7c-448e-b3d5-76c8a53d283f
----
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2017-09-18',
+  title: '5 Time-Tested Principles to Track Your Digital Marketing ROI',
+  description:
+    'Which marketing channels made you the most money yesterday,  last week, or last month? ...No clue? You need a solid ROI tracking plan for your business.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
 Do you know which marketing channels made you the most money yesterday (or last week, or last month)?
 
 I remember feeling completely disoriented and overwhelmed the first time I opened Google Analytics, hoping to answer these questions for my own team. Graphs, panels and numbers all pop out, demanding your attention. 
@@ -18,8 +24,6 @@ I remember feeling completely disoriented and overwhelmed the first time I opene
 If your business is like most, you don't need another tutorial just about another analytics tool. 
 
 *Real* power lies in a clear, concrete tracking plan to determine your marketing return-on-investment (ROI). It answers the most valuable questions any marketing team can ask: "*Which channels made me the most money ---** and how can I get more out of them*?"
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HyNiR0JuYoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **I'm going to lay out five best practices for implementing a solid ROI tracking plan for your business:**
 
@@ -155,7 +159,6 @@ Now you know what events you'll need to measure throughout your buyer's journey.
 
 -   [Segment](https://segment.com/) or [Google Tag Manager](https://www.google.com/analytics/tag-manager/) --- More tools add more complexity for your team to manage. These tools help you manage all your analytics and tracking codes in one place, rather than jumping between half a dozen different sites.
 
-![Peter Drucker wasn't kidding when he wrote, "What gets measured gets managed."](https://d2mxuefqeaa7sj.cloudfront.net/s_7BD2F7EDF55B5ECF880BA9137F52222B5E2DB3BD75FB053BE04EA1B9CFDB42E7_1504560812576_drucker+quote.png "Peter Drucker wasn't kidding when he wrote, "What gets measured gets managed."")
 
 Without a Single Source of Truth, Your Marketing Team Will Hate You
 -------------------------------------------------------------------

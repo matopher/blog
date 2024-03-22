@@ -1,14 +1,20 @@
----
-title: '5 Free Marketing Tools You Should Be Using to Spy on Your Competition'
-author:
-  - 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-excerpt: 'Become a world-class marketing sleuth by using these 5 tools to understand what makes your competitors successful.'
-topics:
-  - marketing
-updated_by: 4a5e0b40-b187-4665-8a16-e59e8dbdc82a
-updated_at: 1609792765
-id: 278dc294-ddd1-4421-a7fe-a6e1c50b1b27
----
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2017-08-22',
+  title: '5 Free Marketing Tools You Should Be Using to Spy on Your Competition',
+  description:
+    'Become a world-class marketing sleuth by using these 5 tools to understand what makes your competitors successful.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
 Do you ever get the sneaking suspicion your marketing is under surveillance? 
 
 You're absolutely right.
