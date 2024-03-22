@@ -26,14 +26,14 @@ function Appearance({ title, description, event, cta, href }) {
 export const metadata = {
   title: 'Speaking',
   description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+    "Sharing what I'm learning through speaking and guest appearances is one of my greatest joys.",
 }
 
 export default function Speaking() {
   return (
     <SimpleLayout
-      title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+      title="Sharing what I'm learning through speaking and guest appearances is one of my greatest joys."
+      intro="See what I've been sharing recently. And don't hesitate to reach out if you'd like to collaborate."
     >
       <div className="space-y-20">
         <SpeakingSection title="Writing">
@@ -45,13 +45,24 @@ export default function Speaking() {
             cta="Read article"
           />
         </SpeakingSection>
-        <SpeakingSection title="Podcasts">
+        <SpeakingSection title="Podcasting">
           <Appearance
             href="https://katesyuma.substack.com/p/unlocking-activation-at-coda-and"
             title="Unlocking Activation at Coda and Building Trust Between PMs and Designers"
             description="This time we talked to Matt Woods, a Product Manager focused on Product-led Growth, who helped companies like Coda increase key activation metrics by 60%, and introduce personalization experience that combines great UX and business impact."
             event="Growthmates, March 2024"
             cta="Listen to podcast"
+          />
+        </SpeakingSection>
+        <SpeakingSection title="Guest Appearances">
+          <Appearance
+            href="https://us06web.zoom.us/rec/share/Cw-Cz5YJ6zuzQeGgQrdm5CX0dCu0xxAVIvlgLjnOqMRBL7bepTEROEz42dmIWUnM.Rsj_tcKx-8I8sG-2"
+            title="Navigating Key Growth Mistakes through the Lens of User Onboarding"
+            description="User onboarding is a key product experience and the base for your product growth. Not being approached well, it can cause problems and risks for the entire Growth system — Acquisition, Retention, and Monetisation.
+
+            ​In this webinar, Kate Syuma, Viktoria Kharlamova, and a special guest Matt Woods (ex-Growth PM at Coda) will share 5 key Growth Mistakes and some examples from their practice."
+            event="Webinar, March 2024"
+            cta="Watch the webinar"
           />
         </SpeakingSection>
       </div>
