@@ -1,0 +1,42 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2019-10-22',
+  title: 'TailwindCSS: How I Accidentally Learned to Love CSS Again',
+  description:
+    'Embracing the utility-first workflow with Tailwind CSS has made a night-and-day difference when I',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+I've had a love-hate relationship with CSS (like many developers.) But embracing the utility-first workflow with [Tailwind CSS](https://tailwindcss.com/) has made a night-and-day difference when I'm developing new front-end experience on the web.
+
+Check out this (very rough) deck I threw together for a 5-minute lightning talk at the Thunderplains 2019 conference in Oklahoma City.
+
+### [Check out the slides](https://speakerdeck.com/matopher/how-i-accidentally-learned-to-love-css-again)
+
+Give me a shout on Twitter at [@matopher](https://twitter.com/matopher) to tell me what you think.
+
+<iframe className="speakerdeck-iframe"
+  style={{
+    border: '0px',
+    background: 'rgba(0, 0, 0, 0.1)',
+    margin: '0px',
+    padding: '0px',
+    borderRadius: '6px',
+    boxShadow: 'rgba(0, 0, 0, 0.2) 0px 5px 40px',
+    width: '100%',
+    height: 'auto',
+    aspectRatio: '560 / 315'
+  }}
+  src="https://speakerdeck.com/player/60e97b0265dd44c0a1ea5589d50cbcba"
+  title="How I Accidentally Learned to Love CSS Again"
+  allowFullScreen
+  data-ratio="1.7777777777777777"
+></iframe>
