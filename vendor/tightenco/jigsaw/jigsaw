@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+define('JIGSAW_START', microtime(true));
+
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require __DIR__ . '/vendor/autoload.php';
+}
+
+if (file_exists(getcwd() . '/vendor/autoload.php')) {
+    require getcwd() . '/vendor/autoload.php';
+}
+
+$app = new TightenCo\Jigsaw\Container;
+
+$app->singleton(
+    Illuminate\Contracts\Debug\ExceptionHandler::class,
+    TightenCo\Jigsaw\Exceptions\Handler::class,
+);
+
+$app->bootstrapWith([
+    TightenCo\Jigsaw\Bootstrap\HandleExceptions::class,
+]);
+
+$application = new Symfony\Component\Console\Application('Jigsaw', '1.7.1');
+$application->add($app[TightenCo\Jigsaw\Console\InitCommand::class]);
+$application->add(new TightenCo\Jigsaw\Console\BuildCommand($app));
+$application->add(new TightenCo\Jigsaw\Console\ServeCommand($app));
+$application->setCatchExceptions(false);
+
+TightenCo\Jigsaw\Jigsaw::addUserCommands($application, $app);
+
+$application->run();

@@ -1,0 +1,62 @@
+{
+  "name": "pluralize-esm",
+  "version": "9.0.5",
+  "description": "Pluralize and singularize any word",
+  "keywords": [
+    "plural",
+    "plurals",
+    "pluralize",
+    "singular",
+    "singularize",
+    "inflection"
+  ],
+  "repository": "https://github.com/sanity-io/pluralize-esm.git",
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prebuild": "npx rimraf dist",
+    "build": "pkg build --strict",
+    "format": "prettier --ignore-path .gitignore --cache --write .",
+    "prepublishOnly": "npm run build",
+    "test": "ava"
+  },
+  "browserslist": [
+    "> 0.2% and supports es6-module and supports es6-module-dynamic-import and not dead and not IE 11",
+    "maintained node versions"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@sanity/pkg-utils": "2.2.1",
+    "@sanity/semantic-release-preset": "^4.0.0",
+    "ava": "^5.1.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-packagejson": "^2.4.0",
+    "rimraf": "^4.1.1",
+    "typescript": "^4.9.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

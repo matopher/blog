@@ -1,0 +1,26 @@
+# Installation
+> `npm install --save @types/shallow-equals`
+
+# Summary
+This package contains type definitions for shallow-equals (https://github.com/hughsk/shallow-equals).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/shallow-equals.
+## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/shallow-equals/index.d.ts)
+````ts
+export = shallow_equals;
+
+declare function shallow_equals<A, B>(
+    a?: A,
+    b?: B,
+    compare?: (objA: A, objB: B) => boolean,
+): boolean;
+
+````
+
+### Additional Details
+ * Last updated: Tue, 07 Nov 2023 15:11:36 GMT
+ * Dependencies: none
+
+# Credits
+These definitions were written by [Ross Solomon](https://github.com/rsolomon).

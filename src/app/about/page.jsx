@@ -39,7 +39,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'I\'m Matt Woods, a curious learning machine who loves growing Internet businesses.',
 }
 
 export default function About() {
@@ -76,7 +76,7 @@ export default function About() {
             </p>
             <p>
               I recently jumped into the world of Real Estate tech to build the
-              marketing operating system that *should* exist with the
+              marketing operating system that <i>should</i> exist with the
               terrifically knowledgable and kind team at{' '}
               <a
                 className="text-teal-500 dark:text-teal-400"

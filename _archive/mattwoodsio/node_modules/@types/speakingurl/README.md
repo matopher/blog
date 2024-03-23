@@ -1,0 +1,43 @@
+# Installation
+> `npm install --save @types/speakingurl`
+
+# Summary
+This package contains type definitions for speakingurl (http://pid.github.io/speakingurl/).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/speakingurl.
+## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/speakingurl/index.d.ts)
+````ts
+interface Dictionary<T> {
+    [x: string]: T;
+}
+
+interface SpeakingURLOptions {
+    separator?: string | undefined;
+    lang?: string | boolean | undefined;
+    symbols?: boolean | undefined;
+    maintainCase?: boolean | undefined;
+    titleCase?: string[] | boolean | undefined;
+    truncate?: number | undefined;
+    uric?: boolean | undefined;
+    uricNoSlash?: boolean | undefined;
+    mark?: boolean | undefined;
+    custom?: string[] | Dictionary<string> | undefined;
+}
+
+declare function getSlug(input: string, options?: SpeakingURLOptions | string): string;
+
+declare namespace getSlug {
+    function createSlug(options: SpeakingURLOptions): (input: string) => string;
+}
+
+export = getSlug;
+
+````
+
+### Additional Details
+ * Last updated: Tue, 07 Nov 2023 15:11:36 GMT
+ * Dependencies: none
+
+# Credits
+These definitions were written by [Zlatko Andonovski](https://github.com/Goldsmith42).

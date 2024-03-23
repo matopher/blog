@@ -1,0 +1,147 @@
+{
+  "name": "@portabletext/react",
+  "version": "3.0.11",
+  "description": "Render Portable Text with React",
+  "keywords": [
+    "portable-text"
+  ],
+  "homepage": "https://github.com/portabletext/react-portabletext#readme",
+  "bugs": {
+    "url": "https://github.com/portabletext/react-portabletext/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/portabletext/react-portabletext.git"
+  },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "require": "./dist/index.cjs",
+      "node": {
+        "module": "./dist/index.js",
+        "import": "./dist/index.cjs.js"
+      },
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/stats.html",
+    "src"
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ],
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaFeatures": {
+        "modules": true
+      },
+      "ecmaVersion": 9,
+      "sourceType": "module"
+    },
+    "extends": [
+      "sanity",
+      "sanity/react",
+      "sanity/typescript",
+      "prettier"
+    ],
+    "ignorePatterns": [
+      "dist/**/"
+    ]
+  },
+  "dependencies": {
+    "@portabletext/toolkit": "^2.0.10",
+    "@portabletext/types": "^2.0.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@sanity/pkg-utils": "^3.0.0",
+    "@sanity/ui": "^1.8.2",
+    "@types/leaflet": "^1.9.6",
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12",
+    "@types/refractor": "^3.0.3",
+    "@types/ws": "^8.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@vitejs/plugin-react": "^4.1.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "esbuild": "^0.19.4",
+    "esbuild-register": "^3.5.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-sanity": "^7.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "leaflet": "^1.9.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "prettier-plugin-packagejson": "^2.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-refractor": "^2.1.7",
+    "refractor": "^4.8.1",
+    "rimraf": "^5.0.1",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "styled-components": "^6.0.8",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s clean pkg:build pkg:check",
+    "build:demo": "vite build demo --config=./vite.config.demo.ts --base=/react-portabletext/",
+    "clean": "rimraf dist coverage demo/dist .nyc_output",
+    "dev": "vite demo",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "lint": "eslint .",
+    "pkg:build": "pkg-utils build --strict",
+    "pkg:check": "pkg-utils --strict",
+    "start": "vite demo",
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
+  }
+}

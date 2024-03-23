@@ -10,11 +10,16 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import logoTechlahoma from '@/images/logos/techlahoma.png'
+import logoTailwind from '@/images/logos/tailwind.png'
+import logoCoda from '@/images/logos/coda.png'
+import logoDigible from '@/images/logos/digible.svg'
+import logoMarketingAgency from '@/images/logos/marketing-agency.svg'
+import image1 from '@/images/photos/kate-viktoria-webinar.png'
+import image2 from '@/images/photos/lennys-meetup.jpeg'
+import image3 from '@/images/photos/dave-matt-skiing.jpeg'
+import image4 from '@/images/photos/maple.jpeg'
+import image5 from '@/images/photos/matt-character.png'
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -175,7 +180,7 @@ function Resume() {
     {
       company: 'Digible',
       title: 'Senior Product Manager',
-      logo: logoPlanetaria,
+      logo: logoDigible,
       start: '2023',
       end: {
         label: 'Present',
@@ -185,28 +190,28 @@ function Resume() {
     {
       company: 'Coda',
       title: 'Product Manager',
-      logo: logoAirbnb,
+      logo: logoCoda,
       start: '2021',
       end: '2023',
     },
     {
       company: 'Techlahoma',
       title: 'Board Member & Head of Marketing',
-      logo: logoStarbucks,
+      logo: logoTechlahoma,
       start: '2020',
       end: '2021',
     },
     {
       company: 'Tailwind',
       title: 'Growth Marketer → Product Manager',
-      logo: logoFacebook,
+      logo: logoTailwind,
       start: '2018',
       end: '2021',
     },
     {
       company: 'Marketing Agency',
       title: 'Marketer / Developer',
-      logo: logoFacebook,
+      logo: logoMarketingAgency,
       start: '2016',
       end: '2018',
     },
