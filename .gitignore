@@ -2,6 +2,7 @@
 /cache/
 /node_modules/
 /vendor/
+/.env
 /.idea/
 /.vscode/
 /.DS_Store
