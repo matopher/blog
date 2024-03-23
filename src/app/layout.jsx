@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Matt Woods - Product Manager',
   },
   description:
-    "I'm a curious learning machine who loves growing Internet businesses.",
+    "I'm Matt Woods, a curious learning machine who loves growing Internet businesses.",
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

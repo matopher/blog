@@ -2,11 +2,9 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoClimate from '@/images/logos/climate.svg'
+import logoReforge from '@/images/logos/reforge.png'
+import logoBookshelf from '@/images/logos/bookshelf.svg'
 
 const projects = [
   {
@@ -17,21 +15,21 @@ const projects = [
       href: 'https://www.reforge.com/profiles/matt-woods',
       label: 'reforge.com/artifacts',
     },
-    logo: logoPlanetaria,
+    logo: logoReforge,
   },
   {
     name: "Patrick Collison's Bookshelf",
     description:
       "Stripe's polymath co-founder and avid reader keeps a robust list of 560+ recommended books. I organized them into into an enriched, filterable collection that's easier to digest.",
-    link: { href: '#', label: 'collisonbookshelf.com' },
-    logo: logoAnimaginary,
+    link: { href: 'https://www.collisonbookshelf.com', label: 'collisonbookshelf.com' },
+    logo: logoBookshelf,
   },
   {
     name: 'New Podcast',
     description:
       'Coming soon: A new podcast about inspiring stories and ideas in climate tech.',
     link: { href: '#', label: 'Coming soon' },
-    logo: logoAnimaginary,
+    logo: logoClimate,
   },
 ]
 

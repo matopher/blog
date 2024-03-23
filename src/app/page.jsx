@@ -5,11 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { InstagramIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import { LinkedInIcon, XIcon } from '@/components/SocialIcons'
 import logoTechlahoma from '@/images/logos/techlahoma.png'
 import logoTailwind from '@/images/logos/tailwind.png'
 import logoCoda from '@/images/logos/coda.png'
@@ -196,14 +192,14 @@ function Resume() {
     },
     {
       company: 'Techlahoma',
-      title: 'Board Member & Head of Marketing',
+      title: 'Board Member',
       logo: logoTechlahoma,
       start: '2020',
       end: '2021',
     },
     {
       company: 'Tailwind',
-      title: 'Growth Marketer → Product Manager',
+      title: 'Marketer → Product Manager',
       logo: logoTailwind,
       start: '2018',
       end: '2021',
