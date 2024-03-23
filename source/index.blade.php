@@ -5,6 +5,5 @@
         <h1 class="text-3xl font-bold">Hello world!</h1>
         <p> {{ $page->contact_email }} </p>
         <p> {{ $page->remotePets->last()->name }} </p>
-        {{-- {{ dd($page->collections->articles->items) }} --}}
     </div>
 @endsection

@@ -3,6 +3,45 @@
 use Sanity\Client as SanityClient;
 use Sanity\BlockContent;
 
+// function getArticles() {
+    
+//     $client = new SanityClient([
+//         'projectId' => '5c0nx2sc',
+//         'dataset' => 'production',
+//         'useCdn' => true,
+//         'apiVersion' => '2024-03-04',
+//     ]);
+
+//     $articles = $client->fetch(
+//         '*[_type == "article"]',
+//       );
+
+//     $results = collect($articles)->map(function ($article) {
+//         return [
+//             'title' => $article['title'],
+//             'date_published' => formatDate($article['date_published']),
+//             'slug' => $article['slug']['current'],
+//             'content' => BlockContent::toHtml($article['content']),
+//         ];
+//     });
+
+//     // dd($results);
+
+//     return $results;
+// }
+
+// function getSlugs() {
+//     $slugs = function($articles = null) {
+//         $articles = getArticles();
+
+//         return collect($articles)->map(function ($article) {
+//             return $article['slug'];
+//         });
+//     };
+
+//    return $slugs; 
+// }
+
 return [
     'production' => false,
     'baseUrl' => '',
@@ -20,11 +59,32 @@ return [
                     return [
                         'title' => $article['title'],
                         'date_published' => $article['date_published'],
+                        'slug' => $article['slug'],
                         'content' => $article['content'],
 
                     ];
                 });
-            }
+            },
+            // TODO: Try event listener approach to statically pull articles once.
+
+            // 'filename' => function($articles = null) {
+            //     $articles = getArticles();
+
+            //     return collect($articles)->map(function ($article) {
+
+            //         $slug = $article['slug'];
+            //         // dd($slug);
+            //         return str($article['slug']);
+            //     });
+            // },
+            // 'path' => function($articles = null) {
+            //     $articles = getArticles();
+
+            //     return collect($articles)->map(function ($article) {
+            //         // dd($article['slug']);
+            //         return '/articles/' . str($article['slug']);
+            //     });
+            // },
         ],
         'pets' => [
             'extends' => '_layouts.pet',
@@ -40,48 +100,3 @@ return [
         ]
     ],
 ];
-
-// return [
-//     2    'collections' => [
-//     3        'posts' => [
-//     4            'extends' => '_layouts.post',
-//     5            'items' => function ($config) {
-//     6                $posts = json_decode(file_get_contents('https://jsonplaceholder.typicode.com/posts'));
-//     7 
-//     8                return collect($posts)->map(function ($post) {
-//     9                    return [
-//    10                        'title' => $post->title,
-//    11                        'content' => $post->body,
-//    12                    ];
-//    13                });
-//    14            },
-//    15        ],
-//    16    ],
-//    17];
-
-
-function getArticles() {
-    
-    $client = new SanityClient([
-        'projectId' => '5c0nx2sc',
-        'dataset' => 'production',
-        'useCdn' => true,
-        'apiVersion' => '2024-03-04',
-    ]);
-
-    $articles = $client->fetch(
-        '*[_type == "article"]',
-      );
-
-    $results = collect($articles)->map(function ($article) {
-        return [
-            'title' => $article['title'],
-            'date_published' => formatDate($article['date_published']),
-            'content' => BlockContent::toHtml($article['content']),
-        ];
-    });
-
-    // dd($results);
-
-    return $results;
-}
