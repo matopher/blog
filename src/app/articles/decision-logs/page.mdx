@@ -1,0 +1,88 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import decisionLogImage from './decision-log.png'
+
+export const article = {
+  author: 'Matt Woods',
+  date: '2024-03-24',
+  title: 'How I Use Decision Logs to Break Down Audacious Team Problems',
+  description:
+    'One of my favorite tools to bring the team along for sprawling, long-running problems is a decision log. Here\'s why.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+“Wait, what did we decide after last week’s discussion, again?”
+
+The feeling of confusion feels inevitable (at first.) You’re a product team delving into thorny, complicated problem areas. It’s only natural that important details tend to get lost in the churning river of Slack, Zoom meetings, dozens of docs, and ad-hoc chats.
+
+But there’s good news as you wade into the uncharted waters: You can pick up new tools to break down the problem into more manageable chunks *and* shine a spotlight on what’s being decided so stakeholders across your team feel in-sync every week.
+
+One of my favorite tools to bring the team along for sprawling, long-running problems is a **decision log.** 
+
+## Why keep a decision log?
+I stumbled into decision logs by watching other exceptional product leaders put them into practice with their teams while tackling sweeping problems that affected entire departments, often with dozens of stakeholders. 
+
+I witnessed the practical power of this ritual firsthand from another product leader on a past team who worked on our Packs ecosystem. And there were dozens of decisions flying: legal details, partner guidelines, payout policies, and new rules to keep the flywheel humming. Once the team made a decision, it was instantly documented and shareable, which made it a breeze  for anyone to reference and understand the team’s thought process.
+
+I finally started my own when I started collaborating on a product’s templates with a set of cross-functional stakeholders across product, design, engineering, and marketing. Templates seem obvious on the surface, but it started to feel overwhelmingly murky when we dug deeper and questions began to spring up:
+* How do we define a “template”?
+* Should there be different kinds of templates? How do we define them?
+* What categories and subcategories should we use to organize them for users?
+* How do we need to collaborate with other product teams across the company to ensure an effective, consistent template experience?
+
+And the list snowballed quickly. Some questions were more important than others. But almost all of them required careful research, thought, discussion, and next steps to unblock the team and ensure we weren’t heading down the wrong path.
+
+We also realized it was annoyingly easy to lose track of conversations happening across Slack or different meetings or in different places. And then once we’d formed a clear answer to a question, we found ourselves backtracking over and over again if the decisions weren’t documented in one place.
+
+Enter the decision log: A source of truth for the upcoming, current, and past decisions that we needed to make as a team for templates to succeed across the company. 
+
+This format had a few key advantages:
+* **It’s a forcing function.** Calling out upcoming key decisions in advance and reviewing them weekly helped us prioritize the research and conversations to keep moving forward. Decision logs can add healthy pressure because it feels miserable for unanswered questions to stagnate indefinitely in your weekly meetings.
+* **It’s documented for the entire team.** Conversations had a clear home where we could take notes and mark them as “decided” when they’re resolved. A quick Slack update with a link back to the log means everyone can follow along to see the clear answer we landed on and *how* we chose to make that call.
+
+## When should you reach for a decision log?
+
+Not every project needs a decision log. But the projects that need them most often look like large, long-running initiatives with many moving pieces or stakeholders. They can often carry high stakes or long-term consequences depending on what your team decides. 
+
+Teams often encounter “one-way doors” and a handful of frequently asked questions that get asked (and re-asked) constantly when tackling long-term problems.
+
+So again, your decision log depends on **your** team’s unique needs and the shape of the problem in front of you. But I’ve found a few principles helpful.
+
+* **Document lighthouse > lightbulb decisions.** I’ve found decision logs shine brihtest when used to curate a focused set of the highest-leverage decisions that eliminate the most confusion across the team. Ask yourself: “Are there principles or patterns we can establish with this decision?” Deciding which color you’re using for buttons in the dashboard or which tool you’re using to collect customer feedback probably doesn’t need live here. Lean on more specific resources like PRDs or design specs for those little nits instead.
+* **Use the log as a library, not a workshop.** You can always spin-up a separate writeup to provide a deep dive of specific context about your decision or bundle many smaller details into an easy to understand summary. Use the log to keep the team on-track and focused on *what* needs to be decided *when.* You can always link to supporting resources the team used to navigate each big question.
+* **Fill your log as a communication byproduct.** Your team is probably already raising questions and sparking discussions in meetings, Slack, or other forums. So don’t over think it. I usually use the log as a clear home for the questions and decisions that are already happening on my teams so it doesn’t get lost in the noise. Then I can proactively lead the team to focus on specific decisions when the time is right.
+
+## What’s a decision log look like in practice?
+Here’s a quick peek at part of a decision log I shared as part of Reforge Artifacts. 
+
+<Image src={decisionLogImage} alt="An example of a decision log I shared with Reforge Artifacts from my work on templates." />
+
+It has a few practical details worth considering.
+
+**1) Question:** I like to state my decisions as a questions because that’s how the team thinks. You could frame it another way, but I think it’s just friendly, intuitive, and clear to say, “Hey, how should we handle seasonal templates?”.
+
+**2) Current answer:** State the current answer to a question, even if it’s only temporary or partial for now. It’s okay to have a work-in-progress answer, and that answer might change as you progress into different stages of the problem.
+
+**3) Status:** Give the team easy labels to know which decisions are decided vs need attention. Bonus points if you can also make it clear which ones are the *most* important to decide next. 
+
+**4) Asked by:** Give your team a clear path to raise questions that you can add to the log if they’re important enough. In this case, I was really managing the log here, but anyone across the team could add to it. 
+
+Oftentimes what would happen is we would be in a conversation or someone would ask something in Slack, and – rather than answering it one-off – I would add it to this log and use this as the forcing function to get it answered. 
+
+Sometimes I would review this log at the beginning of the week to see whether there are important decisions that could help us move faster or unblock things. Or as things would come up in other tests or projects, I would add them here as we figure them out so that it’s documented for later reference.
+
+**5) Post summary to Slack:** Decisions wither in the dark once resolved. So make it easy for the broader team to see where you landed together and why. 
+
+I like to set up a quick automation that posts a link straight to Slack that includes the question, answer, and any discussion / supporting context.
+
+## It’s your turn: Decide & conquer.
+Decision logs aren’t the right tool for every team or problem under the sun. But they *can* save you from tons of backtracking, misalignment, or halfway-decisions that can slow you down as you wade into slippery problems as a team.
+
+I’ve already updated this post with details from folks who’ve tried this in the field. So if you try it, don’t hesitate to drop me a note and let me know what worked (or didn’t) in practice.
+
+Go get ‘em.
