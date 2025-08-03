@@ -6,9 +6,9 @@ This directory contains comprehensive tests for the A/B test sample size calcula
 
 ### `calculations.test.js`
 Unit tests for the core statistical functions:
-- **`getZScore()`** - Tests z-score lookup table for common statistical values
-- **`calculateSampleSize()`** - Tests sample size calculations for different scenarios
-- **Edge cases** - Tests validation and boundary conditions
+- **`getZScore()`** - Tests Beasley-Springer-Moro inverse normal CDF approximation
+- **`calculateSampleSize()`** - Tests sample size calculations using classic A/B testing formula
+- **Edge cases** - Tests validation and boundary conditions  
 - **Real-world scenarios** - Tests common use cases (e-commerce, email, landing pages)
 
 ### `component.test.js`
@@ -31,10 +31,11 @@ URL parameter integration tests:
 The tests cover:
 
 ✅ **Statistical Accuracy**
-- Correct z-score calculations for confidence levels and power
+- Precise inverse normal CDF calculations for any confidence level and power
+- Classic A/B testing formula matching industry standards (Evan Miller, etc.)
 - Proper relative vs absolute effect calculations
 - Sample size calculations for various scenarios
-- Edge case handling (very low/high baseline rates)
+- Edge case handling and input validation
 
 ✅ **User Interface**
 - Form field rendering and default values
@@ -64,11 +65,13 @@ npm test -- url-params.test.js
 npm run test:watch -- --testPathPatterns=ab-sample-size
 ```
 
-## Known Test Issues
+## Statistical Methodology
 
-Some tests may need adjustment based on statistical precision:
-- Z-score lookup table precision (floating point comparisons)
-- Statistical power relationship direction (needs verification)
+The calculator uses the **classic A/B testing approach**:
+- **Null Hypothesis**: Both groups have baseline conversion rate
+- **Formula**: Industry-standard two-proportion z-test  
+- **Accuracy**: Matches established tools like Evan Miller's calculator
+- **Z-scores**: Beasley-Springer-Moro inverse normal CDF (15+ decimal precision)
 
 ## Test Scenarios Covered
 

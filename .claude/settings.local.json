@@ -5,7 +5,9 @@
       "Bash(npm run dev:*)",
       "Bash(npm test:*)",
       "Bash(mkdir:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "WebFetch(domain:www.evanmiller.org)",
+      "Bash(node:*)"
     ],
     "deny": []
   }

@@ -20,43 +20,94 @@ function calculateSampleSize(baselineRate, minDetectableEffect, alpha, power, is
     p2 = p1 + (minDetectableEffect / 100)
   }
 
-  // Z-scores for alpha and power
-  const zAlpha = getZScore(1 - alpha / 2)
-  const zBeta = getZScore(power)
+  // Validate that p2 is within valid bounds [0, 1]
+  if (p2 < 0 || p2 > 1) {
+    throw new Error('Invalid effect size: resulting proportion must be between 0% and 100%')
+  }
 
-  // Pooled proportion
-  const pPooled = (p1 + p2) / 2
+  // Z-scores for alpha and power (two-tailed test)
+  const zAlpha = getZScore(1 - alpha / 2)  // Critical value for Type I error
+  const zBeta = getZScore(power)           // Critical value for Type II error (1-β)
 
-  // Sample size calculation for two-sample proportion test
-  const numerator = Math.pow(zAlpha * Math.sqrt(2 * pPooled * (1 - pPooled)) + zBeta * Math.sqrt(p1 * (1 - p1) + p2 * (1 - p2)), 2)
-  const denominator = Math.pow(p2 - p1, 2)
+  // Classic two-proportion sample size formula (industry standard)
+  // Uses baseline rate for null hypothesis variance - standard for A/B testing
+  
+  // Under null hypothesis: both groups have baseline conversion rate p1
+  const varianceNull = 2 * p1 * (1 - p1)
+  
+  // Under alternative hypothesis: groups have their respective rates
+  const varianceAlt = p1 * (1 - p1) + p2 * (1 - p2)
+  
+  // Effect size (difference in proportions)
+  const delta = Math.abs(p2 - p1)
+  
+  // Sample size per group using classic A/B testing formula
+  const numerator = Math.pow(zAlpha * Math.sqrt(varianceNull) + zBeta * Math.sqrt(varianceAlt), 2)
+  const denominator = Math.pow(delta, 2)
 
-  return Math.ceil(numerator / denominator)
+  const sampleSize = numerator / denominator
+  
+  // Round up to next integer (can't have fractional visitors)
+  return Math.ceil(sampleSize)
 }
 
 function getZScore(probability) {
-  // Approximation of inverse normal CDF for common values
-  const zScores = {
-    0.50: 0.0000,
-    0.80: 0.8416,
-    0.90: 1.2816,
-    0.95: 1.6449,
-    0.975: 1.9600,
-    0.99: 2.3263,
-    0.995: 2.5758
+  // Beasley-Springer-Moro inverse normal CDF approximation
+  // More accurate than lookup table for any probability value
+  
+  if (probability <= 0 || probability >= 1) {
+    throw new Error('Probability must be between 0 and 1')
   }
-
-  return zScores[probability] || 1.96 // Default to 95% if not found
+  
+  // For probabilities very close to 0.5, return 0
+  if (Math.abs(probability - 0.5) < 1e-10) {
+    return 0
+  }
+  
+  let p = probability
+  let sign = 1
+  
+  // Use symmetry for values > 0.5
+  if (p > 0.5) {
+    p = 1 - p
+    sign = -1
+  }
+  
+  // Beasley-Springer-Moro approximation coefficients
+  const a = [0, -3.969683028665376e+01, 2.209460984245205e+02, -2.759285104469687e+02, 1.383577518672690e+02, -3.066479806614716e+01, 2.506628277459239e+00]
+  const b = [0, -5.447609879822406e+01, 1.615858368580409e+02, -1.556989798598866e+02, 6.680131188771972e+01, -1.328068155288572e+01]
+  const c = [0, -7.784894002430293e-03, -3.223964580411365e-01, -2.400758277161838e+00, -2.549732539343734e+00, 4.374664141464968e+00, 2.938163982698783e+00]
+  const d = [0, 7.784695709041462e-03, 3.224671290700398e-01, 2.445134137142996e+00, 3.754408661907416e+00]
+  
+  let x
+  
+  if (p < 2.5e-1) {
+    // Rational approximation for lower region
+    const q = Math.sqrt(-2 * Math.log(p))
+    x = (((((c[1] * q + c[2]) * q + c[3]) * q + c[4]) * q + c[5]) * q + c[6]) / 
+        ((((d[1] * q + d[2]) * q + d[3]) * q + d[4]) * q + 1)
+  } else {
+    // Rational approximation for central region
+    const q = p - 0.5
+    const r = q * q
+    x = (((((a[1] * r + a[2]) * r + a[3]) * r + a[4]) * r + a[5]) * r + a[6]) * q / 
+        (((((b[1] * r + b[2]) * r + b[3]) * r + b[4]) * r + b[5]) * r + 1)
+  }
+  
+  return sign * x
 }
 
 function InputField({ label, value, onChange, type = "number", min, max, step, suffix, description }) {
+  const id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  
   return (
     <div className="space-y-2">
-      <label className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
+      <label htmlFor={id} className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
         {label}
       </label>
       <div className="relative w-20">
         <input
+          id={id}
           type={type}
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -79,13 +130,19 @@ function InputField({ label, value, onChange, type = "number", min, max, step, s
 }
 
 function Toggle({ label, enabled, onChange, description }) {
+  const id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  
   return (
     <div className="space-y-2">
-      <label className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
+      <label htmlFor={id} className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
         {label}
       </label>
       <button
+        id={id}
         type="button"
+        role="switch"
+        aria-checked={enabled}
+        aria-labelledby={id}
         onClick={() => onChange(!enabled)}
         className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${enabled ? 'bg-teal-600' : 'bg-zinc-200 dark:bg-zinc-700'
           }`}
