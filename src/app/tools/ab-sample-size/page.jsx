@@ -252,13 +252,13 @@ export default function ABSampleSizeCalculator() {
 
   return (
     <SimpleLayout
-      title="A/B Test Sample Size Calculator"
-      intro="Calculate the required sample size for your A/B test using a two-sample proportion z-test. Input your test parameters below to get real-time sample size calculations."
+      title="How many visitors do you need to run your A/B test?"
+      intro="Use this quick calculator to get your sample size. Built for marketers, PMs, and experiment-happy folks who hate stats jargon."
     >
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
-            Test Parameters
+            Test Setup
           </h2>
 
           <InputField
@@ -269,7 +269,7 @@ export default function ABSampleSizeCalculator() {
             max="99.9"
             step="0.1"
             suffix="%"
-            description="Current conversion rate of your control variant"
+            description="What's your current conversion rate? (Control group)"
           />
 
           <InputField
@@ -282,16 +282,16 @@ export default function ABSampleSizeCalculator() {
             suffix={isRelativeEffect ? "%" : "pp"}
             description={
               isRelativeEffect
-                ? `Smallest relative improvement (e.g., 20% means ${baselineRate || 10}% → ${((baselineRate || 10) * (1 + (minDetectableEffect || 20) / 100)).toFixed(1)}%)`
-                : `Smallest absolute improvement (e.g., 2pp means ${baselineRate || 10}% → ${((baselineRate || 10) + Number(minDetectableEffect || 2)).toFixed(1)}%)`
+                ? "Smallest improvement you care about (% lift over baseline). (e.g. 10% = 50% → 55%)"
+                : "Smallest improvement you care about (% lift over baseline). (e.g. 2pp = 50% → 52%)"
             }
           />
 
           <Toggle
-            label="Calculate MDE as Relative % Lift?"
+            label="Treat MDE as a % lift over baseline?"
             enabled={isRelativeEffect}
             onChange={setIsRelativeEffect}
-            description={isRelativeEffect ? "Relative lift: MDE as % of baseline (e.g., 20% improvement)" : "Absolute lift: MDE as percentage points (e.g., 2pp improvement)"}
+            description="(If off, uses absolute % point change instead)"
           />
 
           <InputField
@@ -302,7 +302,7 @@ export default function ABSampleSizeCalculator() {
             max="20"
             step="1"
             suffix="%"
-            description="Probability of false positive (typically 5% for 95% confidence)"
+            description="How confident do you want to be in your results? (5% = 95% confidence)"
           />
 
           <InputField
@@ -313,7 +313,7 @@ export default function ABSampleSizeCalculator() {
             max="99"
             step="1"
             suffix="%"
-            description="Probability of detecting a true effect (typically 80%)"
+            description="How sure do you want to be that you'll catch a real effect? (80% is a solid default)"
           />
         </div>
 
@@ -338,13 +338,13 @@ export default function ABSampleSizeCalculator() {
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 dark:border-amber-800 dark:bg-amber-900/20">
             <h3 className="text-sm font-semibold text-amber-800 dark:text-amber-200">
-              Important Notes
+              💡 Heads up:
             </h3>
             <ul className="mt-2 space-y-1 text-xs text-amber-700 dark:text-amber-300">
-              <li>• This calculator assumes equal allocation between variants</li>
-              <li>• Results are for two-tailed tests with normal approximation</li>
-              <li>• Consider external factors like seasonality and novelty effects</li>
-              <li>• Run tests for at least one full business cycle when possible</li>
+              <li>• Assumes equal split between control and treatment</li>
+              <li>• Uses a standard two-tailed z-test (normal approximation)</li>
+              <li>• Seasonality and novelty effects can skew results</li>
+              <li>• Longer tests = more reliable results (aim for a full biz cycle if you can)</li>
             </ul>
           </div>
         </div>
