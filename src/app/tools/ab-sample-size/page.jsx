@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 function calculateSampleSize(baselineRate, minDetectableEffect, alpha, power, isRelative = true) {
@@ -112,14 +113,63 @@ function ResultCard({ title, value, description }) {
 }
 
 export default function ABSampleSizeCalculator() {
-  const [baselineRate, setBaselineRate] = useState(10)
-  const [minDetectableEffect, setMinDetectableEffect] = useState(20)
-  const [isRelativeEffect, setIsRelativeEffect] = useState(true)
-  const [alpha, setAlpha] = useState(0.05)
-  const [power, setPower] = useState(0.80)
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  
+  // Helper function to get URL parameter with fallback
+  const getUrlParam = (key, defaultValue, validator = null) => {
+    const value = searchParams.get(key)
+    if (value === null) return defaultValue
+    
+    if (validator) {
+      const validated = validator(value)
+      return validated !== null ? validated : defaultValue
+    }
+    return value
+  }
+  
+  // Validators
+  const parseFloatParam = (value) => {
+    const parsed = Number(value)
+    return !isNaN(parsed) && parsed >= 0 ? parsed : null
+  }
+  
+  const parseBoolean = (value) => {
+    return value === 'true' ? true : value === 'false' ? false : null
+  }
+  
+  const [baselineRate, setBaselineRate] = useState(() => 
+    getUrlParam('baseline', 10, parseFloatParam)
+  )
+  const [minDetectableEffect, setMinDetectableEffect] = useState(() => 
+    getUrlParam('effect', 20, parseFloatParam)
+  )
+  const [isRelativeEffect, setIsRelativeEffect] = useState(() => 
+    getUrlParam('relative', true, parseBoolean)
+  )
+  const [alpha, setAlpha] = useState(() => 
+    getUrlParam('alpha', 0.05, parseFloatParam)
+  )
+  const [power, setPower] = useState(() => 
+    getUrlParam('power', 0.80, parseFloatParam)
+  )
   const [sampleSize, setSampleSize] = useState(null)
   const [totalVisitors, setTotalVisitors] = useState(null)
 
+  // Update URL parameters when form values change
+  useEffect(() => {
+    const params = new URLSearchParams()
+    params.set('baseline', baselineRate.toString())
+    params.set('effect', minDetectableEffect.toString())
+    params.set('relative', isRelativeEffect.toString())
+    params.set('alpha', alpha.toString())
+    params.set('power', power.toString())
+    
+    const newUrl = `${window.location.pathname}?${params.toString()}`
+    window.history.replaceState({}, '', newUrl)
+  }, [baselineRate, minDetectableEffect, isRelativeEffect, alpha, power])
+
+  // Calculate sample size when parameters change
   useEffect(() => {
     try {
       if (baselineRate > 0 && minDetectableEffect > 0 && alpha > 0 && alpha < 1 && power > 0 && power < 1) {
@@ -169,7 +219,7 @@ export default function ABSampleSizeCalculator() {
             description={
               isRelativeEffect
                 ? `Smallest relative improvement (e.g., 20% means ${baselineRate}% → ${(baselineRate * (1 + minDetectableEffect / 100)).toFixed(1)}%)`
-                : `Smallest absolute improvement (e.g., 2pp means ${baselineRate}% → ${(baselineRate + parseFloat(minDetectableEffect || 0)).toFixed(1)}%)`
+                : `Smallest absolute improvement (e.g., 2pp means ${baselineRate}% → ${(baselineRate + Number(minDetectableEffect || 0)).toFixed(1)}%)`
             }
           />
 
