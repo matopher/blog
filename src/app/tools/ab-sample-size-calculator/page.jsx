@@ -261,9 +261,20 @@ export default function ABSampleSizeCalculator() {
 
   return (
     <SimpleLayout
-      title="How many visitors do you need to run your A/B test?"
-      intro="Use this quick calculator to get your sample size. Built for marketers, PMs, and experiment-happy folks who hate stats jargon."
+      title=""
+      intro=""
     >
+      <div className="mb-8 max-w-2xl">
+        <h1 className="text-sm font-semibold tracking-wide text-zinc-600 dark:text-zinc-400 uppercase mb-4">
+          A/B Test Sample Size Calculator
+        </h1>
+        <h2 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          How many visitors do you need to run your A/B test?
+        </h2>
+        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Use this quick calculator to get your sample size. Built for marketers, PMs, and experiment-happy folks who hate stats jargon.
+        </p>
+      </div>
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">

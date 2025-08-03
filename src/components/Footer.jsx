@@ -27,6 +27,9 @@ export function Footer() {
                   Portfolio
                 </NavLink>
                 <NavLink href="/speaking">Speaking</NavLink>
+                <NavLink href="/tools/ab-sample-size-calculator">
+                  A/B Test Calculator
+                </NavLink>
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
