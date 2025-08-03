@@ -100,10 +100,65 @@ function Toggle({ label, enabled, onChange, description }) {
   )
 }
 
-function ResultCard({ title, value, description }) {
+function CopyIcon(props) {
   return (
-    <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-700 dark:bg-zinc-800">
-      <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{title}</h3>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 013.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0121 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 017.5 16.125V3.375z" />
+      <path d="M15 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0017.25 7.5h-1.875A.375.375 0 0115 7.125V5.25zM4.875 6H6v10.125A3.375 3.375 0 009.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V7.875C3 6.839 3.84 6 4.875 6z" />
+    </svg>
+  )
+}
+
+function CheckIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path fillRule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clipRule="evenodd" />
+    </svg>
+  )
+}
+
+function ResultCard({ title, value, description }) {
+  const [copied, setCopied] = useState(false)
+  
+  const handleCopy = async () => {
+    if (value) {
+      try {
+        await navigator.clipboard.writeText(value.toString())
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      } catch (err) {
+        console.error('Failed to copy:', err)
+      }
+    }
+  }
+
+  return (
+    <div className="group rounded-lg border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-700 dark:bg-zinc-800">
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{title}</h3>
+        <button
+          onClick={handleCopy}
+          disabled={!value}
+          className={`flex items-center gap-2 px-3 py-2 rounded-md border text-sm font-medium transition-opacity opacity-0 group-hover:opacity-100 group-hover:duration-500 duration-1000 ${
+            value 
+              ? 'border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 cursor-pointer text-zinc-700 dark:text-zinc-200' 
+              : 'border-zinc-200 dark:border-zinc-700 cursor-not-allowed text-zinc-400 dark:text-zinc-500'
+          }`}
+          title={value ? "Copy value" : "No value to copy"}
+        >
+          {copied ? (
+            <>
+              <CheckIcon className="h-4 w-4 text-green-600 dark:text-green-400" />
+              <span className="text-green-600 dark:text-green-400">Copied</span>
+            </>
+          ) : (
+            <>
+              <CopyIcon className={`h-4 w-4 ${value ? 'text-zinc-600 dark:text-zinc-300' : 'text-zinc-300 dark:text-zinc-600'}`} />
+              <span>Copy</span>
+            </>
+          )}
+        </button>
+      </div>
       <p className="mt-2 text-3xl font-bold text-teal-600 dark:text-teal-400">
         {value?.toLocaleString() || '—'}
       </p>
@@ -118,6 +173,8 @@ export default function ABSampleSizeCalculator() {
   
   // Helper function to get URL parameter with fallback
   const getUrlParam = (key, defaultValue, validator = null) => {
+    if (!searchParams) return defaultValue
+    
     const value = searchParams.get(key)
     if (value === null) return defaultValue
     
@@ -138,23 +195,30 @@ export default function ABSampleSizeCalculator() {
     return value === 'true' ? true : value === 'false' ? false : null
   }
   
-  const [baselineRate, setBaselineRate] = useState(() => 
-    getUrlParam('baseline', 10, parseFloatParam)
-  )
-  const [minDetectableEffect, setMinDetectableEffect] = useState(() => 
-    getUrlParam('effect', 20, parseFloatParam)
-  )
-  const [isRelativeEffect, setIsRelativeEffect] = useState(() => 
-    getUrlParam('relative', true, parseBoolean)
-  )
-  const [alpha, setAlpha] = useState(() => 
-    getUrlParam('alpha', 0.05, parseFloatParam)
-  )
-  const [power, setPower] = useState(() => 
-    getUrlParam('power', 0.80, parseFloatParam)
-  )
+  const [baselineRate, setBaselineRate] = useState(10)
+  const [minDetectableEffect, setMinDetectableEffect] = useState(20)
+  const [isRelativeEffect, setIsRelativeEffect] = useState(true)
+  const [alpha, setAlpha] = useState(0.05)
+  const [power, setPower] = useState(0.80)
   const [sampleSize, setSampleSize] = useState(null)
   const [totalVisitors, setTotalVisitors] = useState(null)
+
+  // Load URL parameters on mount
+  useEffect(() => {
+    if (searchParams) {
+      const baseline = getUrlParam('baseline', 10, parseFloatParam)
+      const effect = getUrlParam('effect', 20, parseFloatParam)
+      const relative = getUrlParam('relative', true, parseBoolean)
+      const alphaParam = getUrlParam('alpha', 0.05, parseFloatParam)
+      const powerParam = getUrlParam('power', 0.80, parseFloatParam)
+      
+      setBaselineRate(baseline)
+      setMinDetectableEffect(effect)
+      setIsRelativeEffect(relative)
+      setAlpha(alphaParam)
+      setPower(powerParam)
+    }
+  }, [searchParams])
 
   // Update URL parameters when form values change
   useEffect(() => {
@@ -200,7 +264,7 @@ export default function ABSampleSizeCalculator() {
           <InputField
             label="Baseline Conversion Rate"
             value={baselineRate}
-            onChange={setBaselineRate}
+            onChange={(value) => setBaselineRate(Number(value))}
             min="0.1"
             max="99.9"
             step="0.1"
@@ -211,15 +275,15 @@ export default function ABSampleSizeCalculator() {
           <InputField
             label={isRelativeEffect ? "Minimum Detectable Effect (Relative)" : "Minimum Detectable Effect (Absolute)"}
             value={minDetectableEffect}
-            onChange={setMinDetectableEffect}
+            onChange={(value) => setMinDetectableEffect(Number(value))}
             min="0.1"
             max={isRelativeEffect ? "200" : "50"}
             step="0.1"
             suffix={isRelativeEffect ? "%" : "pp"}
             description={
               isRelativeEffect
-                ? `Smallest relative improvement (e.g., 20% means ${baselineRate}% → ${(baselineRate * (1 + minDetectableEffect / 100)).toFixed(1)}%)`
-                : `Smallest absolute improvement (e.g., 2pp means ${baselineRate}% → ${(baselineRate + Number(minDetectableEffect || 0)).toFixed(1)}%)`
+                ? `Smallest relative improvement (e.g., 20% means ${baselineRate || 10}% → ${((baselineRate || 10) * (1 + (minDetectableEffect || 20) / 100)).toFixed(1)}%)`
+                : `Smallest absolute improvement (e.g., 2pp means ${baselineRate || 10}% → ${((baselineRate || 10) + Number(minDetectableEffect || 2)).toFixed(1)}%)`
             }
           />
 
@@ -232,22 +296,24 @@ export default function ABSampleSizeCalculator() {
 
           <InputField
             label="Significance Level (α)"
-            value={alpha}
-            onChange={setAlpha}
-            min="0.01"
-            max="0.20"
-            step="0.01"
-            description="Probability of false positive (typically 0.05 for 95% confidence)"
+            value={alpha * 100}
+            onChange={(value) => setAlpha(Number(value) / 100)}
+            min="1"
+            max="20"
+            step="1"
+            suffix="%"
+            description="Probability of false positive (typically 5% for 95% confidence)"
           />
 
           <InputField
             label="Statistical Power (1-β)"
-            value={power}
-            onChange={setPower}
-            min="0.50"
-            max="0.99"
-            step="0.01"
-            description="Probability of detecting a true effect (typically 0.80 for 80% power)"
+            value={power * 100}
+            onChange={(value) => setPower(Number(value) / 100)}
+            min="50"
+            max="99"
+            step="1"
+            suffix="%"
+            description="Probability of detecting a true effect (typically 80%)"
           />
         </div>
 
