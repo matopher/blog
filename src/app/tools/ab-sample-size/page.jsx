@@ -117,6 +117,14 @@ function CheckIcon(props) {
   )
 }
 
+function ChevronDownIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path fillRule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clipRule="evenodd" />
+    </svg>
+  )
+}
+
 function ResultCard({ title, value, description }) {
   const [copied, setCopied] = useState(false)
   
@@ -200,6 +208,7 @@ export default function ABSampleSizeCalculator() {
   const [isRelativeEffect, setIsRelativeEffect] = useState(true)
   const [alpha, setAlpha] = useState(0.05)
   const [power, setPower] = useState(0.80)
+  const [showAdvanced, setShowAdvanced] = useState(false)
   const [sampleSize, setSampleSize] = useState(null)
   const [totalVisitors, setTotalVisitors] = useState(null)
 
@@ -294,27 +303,50 @@ export default function ABSampleSizeCalculator() {
             description="(If off, uses absolute % point change instead)"
           />
 
-          <InputField
-            label="Significance Level (α)"
-            value={alpha * 100}
-            onChange={(value) => setAlpha(Number(value) / 100)}
-            min="1"
-            max="20"
-            step="1"
-            suffix="%"
-            description="How confident do you want to be in your results? (5% = 95% confidence)"
-          />
+          <div className="border-t border-zinc-200 dark:border-zinc-700 pt-6">
+            <button
+              type="button"
+              onClick={() => setShowAdvanced(!showAdvanced)}
+              className="flex items-center justify-between w-full text-left"
+            >
+              <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Advanced settings
+              </span>
+              <ChevronDownIcon 
+                className={`h-4 w-4 text-zinc-500 dark:text-zinc-400 transition-transform duration-200 ${
+                  showAdvanced ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
+            
+            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+              showAdvanced ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+            }`}>
+              <div className="space-y-6">
+                <InputField
+                  label="Significance Level (α)"
+                  value={alpha * 100}
+                  onChange={(value) => setAlpha(Number(value) / 100)}
+                  min="1"
+                  max="20"
+                  step="1"
+                  suffix="%"
+                  description="How confident do you want to be in your results? (5% = 95% confidence)"
+                />
 
-          <InputField
-            label="Statistical Power (1-β)"
-            value={power * 100}
-            onChange={(value) => setPower(Number(value) / 100)}
-            min="50"
-            max="99"
-            step="1"
-            suffix="%"
-            description="How sure do you want to be that you'll catch a real effect? (80% is a solid default)"
-          />
+                <InputField
+                  label="Statistical Power (1-β)"
+                  value={power * 100}
+                  onChange={(value) => setPower(Number(value) / 100)}
+                  min="50"
+                  max="99"
+                  step="1"
+                  suffix="%"
+                  description="How sure do you want to be that you'll catch a real effect? (80% is a solid default)"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-6">
