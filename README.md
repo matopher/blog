@@ -1,42 +1,65 @@
-# Spotlight
+# Matt Woods' Blog
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Personal blog and portfolio website built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com), featuring articles on product management, marketing, and software development.
+
+## About
+
+This is the personal website of Matt Woods, a Senior Product Manager at Digible. The site features:
+
+- **Blog Articles**: Insights on product management, marketing strategies, book summaries, and software development
+- **Professional Portfolio**: Work experience and project highlights
+- **Speaking Engagements**: Information about talks and presentations
+- **Project Showcase**: Details of notable projects and contributions
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+To run this site locally, first install the npm dependencies:
 
 ```bash
 npm install
 ```
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+Create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable:
 
 ```
-NEXT_PUBLIC_SITE_URL=https://example.com
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
 ```
 
-Next, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Customizing
+## Project Structure
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+- `/src/app` - Next.js app router pages and layouts
+- `/src/components` - Reusable React components
+- `/src/images` - Static images and logos
+- `/src/lib` - Utility functions and data fetching
+- `/src/styles` - CSS and styling files
+- `/_archive` - Archived content and legacy files
 
-## License
+## Content Management
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+Articles are written in MDX format and stored in `/src/app/articles/`. Each article is in its own directory with a `page.mdx` file containing the content and metadata.
 
-## Learn more
+## Technologies Used
 
-To learn more about the technologies used in this site template, see the following resources:
+- **Framework**: [Next.js 14](https://nextjs.org) with App Router
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) with custom components
+- **Content**: [MDX](https://mdxjs.com) for article authoring
+- **UI Components**: [Headless UI](https://headlessui.dev) for interactive elements
+- **Code Highlighting**: Prism.js for syntax highlighting
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+## Deployment
+
+The site is optimized for deployment on platforms like Vercel, Netlify, or any static hosting service that supports Next.js.
+
+Available scripts:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
