@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import Image from 'next/image'
+import { Container } from '@/components/Container'
+import logoAbTest from '@/images/logos/ab-test.svg'
 
 function calculateSampleSize(baselineRate, minDetectableEffect, alpha, power, isRelative = true) {
   // Convert percentages to proportions
@@ -260,11 +262,16 @@ export default function ABSampleSizeCalculator() {
   }, [baselineRate, minDetectableEffect, alpha, power, isRelativeEffect])
 
   return (
-    <SimpleLayout
-      title=""
-      intro=""
-    >
+    <Container className="mt-8 sm:mt-16">
       <div className="mb-8 max-w-2xl">
+        <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+          <Image
+            src={logoAbTest}
+            alt="A/B Test Calculator"
+            className="h-10 w-10"
+            unoptimized
+          />
+        </div>
         <h1 className="text-sm font-semibold tracking-wide text-zinc-600 dark:text-zinc-400 uppercase mb-4">
           A/B Test Sample Size Calculator
         </h1>
@@ -392,6 +399,6 @@ export default function ABSampleSizeCalculator() {
           </div>
         </div>
       </div>
-    </SimpleLayout>
+    </Container>
   )
 }

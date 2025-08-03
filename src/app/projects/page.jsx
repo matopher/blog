@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoClimate from '@/images/logos/climate.svg'
+import logoAbTest from '@/images/logos/ab-test.svg'
 import logoReforge from '@/images/logos/reforge.png'
 import logoBookshelf from '@/images/logos/bookshelf.svg'
 
@@ -25,11 +25,11 @@ const projects = [
     logo: logoBookshelf,
   },
   {
-    name: 'New Podcast',
+    name: 'A/B Test Sample Size Calculator',
     description:
-      'Coming soon: A new podcast about inspiring stories and ideas in climate tech.',
-    link: { href: '#', label: 'Coming soon' },
-    logo: logoClimate,
+      'A quick, user-friendly calculator that helps marketers and product managers determine the right sample size for their A/B tests. No stats degree required.',
+    link: { href: '/tools/ab-sample-size-calculator', label: 'Try the calculator' },
+    logo: logoAbTest,
   },
 ]
 
