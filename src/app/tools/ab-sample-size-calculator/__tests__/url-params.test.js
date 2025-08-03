@@ -21,7 +21,7 @@ Object.defineProperty(window, 'history', {
 
 // Mock window.location 
 delete window.location
-window.location = { pathname: '/tools/ab-sample-size' }
+window.location = { pathname: '/tools/ab-sample-size-calculator' }
 
 import ABSampleSizeCalculator from '../page'
 
