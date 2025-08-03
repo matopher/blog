@@ -52,7 +52,7 @@ function InputField({ label, value, onChange, type = "number", min, max, step, s
       <label className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
         {label}
       </label>
-      <div className="relative">
+      <div className="relative w-20">
         <input
           type={type}
           value={value}
@@ -60,7 +60,7 @@ function InputField({ label, value, onChange, type = "number", min, max, step, s
           min={min}
           max={max}
           step={step}
-          className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100"
+          className="w-full min-w-0 rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100"
         />
         {suffix && (
           <span className="absolute right-3 top-2 text-sm text-zinc-500 dark:text-zinc-400">
