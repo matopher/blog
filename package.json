@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -29,8 +31,13 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "6.6.4",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
+    "jest": "30.0.5",
+    "jest-environment-jsdom": "30.0.5",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "sharp": "0.33.1"
