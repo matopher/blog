@@ -10,6 +10,7 @@ import logoTechlahoma from '@/images/logos/techlahoma.png'
 import logoTailwind from '@/images/logos/tailwind.png'
 import logoCoda from '@/images/logos/coda.png'
 import logoDigible from '@/images/logos/digible.svg'
+import logoApollo from '@/images/logos/apollo.svg'
 import logoMarketingAgency from '@/images/logos/marketing-agency.svg'
 import image1 from '@/images/photos/maple.jpeg'
 import image2 from '@/images/photos/coda-team.jpeg'
@@ -174,14 +175,21 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Digible',
-      title: 'Senior Product Manager',
-      logo: logoDigible,
-      start: '2023',
+      company: 'Apollo.io',
+      title: 'Senior Product Manager, Growth',
+      logo: logoApollo,
+      start: '2025',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
+    },
+    {
+      company: 'Digible',
+      title: 'Senior Product Manager',
+      logo: logoDigible,
+      start: '2023',
+      end: '2025',
     },
     {
       company: 'Coda',
