@@ -26,6 +26,14 @@ URL parameter integration tests:
 - **Error handling** - Tests graceful handling of invalid URL parameters
 - **Shareability** - Tests creating shareable URLs for common scenarios
 
+### `input-handling.test.js`
+Input field behavior and UX tests:
+- **Leading zero removal** - Prevents confusing leading zeros in number inputs
+- **Decimal preservation** - Maintains valid decimal formats like "0.5"
+- **Edge cases** - Empty inputs, multiple zeros, decimal handling
+- **Integration** - Ensures calculator functionality works with cleaned inputs
+- **Regression prevention** - Guards against UX issues returning
+
 ## Test Coverage
 
 The tests cover:
