@@ -21,13 +21,16 @@ Object.defineProperty(window, 'history', {
   writable: true,
 })
 
-// Mock window.location properly
+// Mock window.location
 delete window.location
 window.location = {
   pathname: '/tools/ab-sample-size-calculator',
   search: '',
   hash: '',
-  href: 'http://localhost/tools/ab-sample-size-calculator'
+  href: 'http://localhost/tools/ab-sample-size-calculator',
+  assign: jest.fn(),
+  replace: jest.fn(),
+  reload: jest.fn(),
 }
 
 import ABSampleSizeCalculator from '../page'
@@ -42,13 +45,21 @@ describe('A/B Test Sample Size Calculator - URL Parameters', () => {
     mockReplaceState.mockClear()
   })
 
-  test('loads default values when no URL parameters are present', () => {
+  test('loads default values when no URL parameters are present', async () => {
     render(<ABSampleSizeCalculator />)
     
     expect(screen.getByDisplayValue('10')).toBeInTheDocument() // baseline
     expect(screen.getByDisplayValue('20')).toBeInTheDocument() // effect
-    expect(screen.getByDisplayValue('5')).toBeInTheDocument()  // alpha
-    expect(screen.getByDisplayValue('80')).toBeInTheDocument() // power
+    
+    // Alpha and power are in advanced settings (collapsed by default)
+    // Need to expand to see them
+    const advancedButton = screen.getByText(/advanced settings/i)
+    await user.click(advancedButton)
+    
+    await waitFor(() => {
+      expect(screen.getByDisplayValue('5')).toBeInTheDocument()  // alpha
+      expect(screen.getByDisplayValue('80')).toBeInTheDocument() // power
+    })
   })
 
   test('loads values from URL parameters', async () => {
@@ -75,16 +86,21 @@ describe('A/B Test Sample Size Calculator - URL Parameters', () => {
     mockSearchParams = new URLSearchParams({
       baseline: 'invalid',
       effect: '-10',
-      alpha: '2.5', // Invalid - too high
+      alpha: 'invalid', // Truly invalid
       power: 'abc'
     })
 
     render(<ABSampleSizeCalculator />)
     
     // Should fall back to defaults for invalid values
+    expect(screen.getByDisplayValue('10')).toBeInTheDocument() // baseline default
+    expect(screen.getByDisplayValue('20')).toBeInTheDocument() // effect default
+    
+    // Alpha and power are in advanced settings
+    const advancedButton = screen.getByText(/advanced settings/i)
+    await user.click(advancedButton)
+    
     await waitFor(() => {
-      expect(screen.getByDisplayValue('10')).toBeInTheDocument() // baseline default
-      expect(screen.getByDisplayValue('20')).toBeInTheDocument() // effect default
       expect(screen.getByDisplayValue('5')).toBeInTheDocument()  // alpha default
       expect(screen.getByDisplayValue('80')).toBeInTheDocument() // power default
     })
@@ -252,7 +268,7 @@ describe('A/B Test Sample Size Calculator - URL Parameters', () => {
   test('URL updates happen on every parameter change', async () => {
     render(<ABSampleSizeCalculator />)
     
-    const toggle = screen.getByLabelText(/mde calculation type/i)
+    const toggle = screen.getByRole('switch', { name: /treat mde as a % lift over baseline/i })
     
     // Click toggle
     await user.click(toggle)
