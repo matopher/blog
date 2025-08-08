@@ -100,6 +100,23 @@ function getZScore(probability) {
 function InputField({ label, value, onChange, type = "number", min, max, step, suffix, description }) {
   const id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-')
   
+  const handleChange = (e) => {
+    let inputValue = e.target.value
+    
+    // Handle empty input
+    if (inputValue === '') {
+      onChange(inputValue)
+      return
+    }
+    
+    // Remove leading zeros, but preserve "0" and "0." states
+    if (inputValue.length > 1 && inputValue[0] === '0' && inputValue[1] !== '.') {
+      inputValue = inputValue.replace(/^0+/, '') || '0'
+    }
+    
+    onChange(inputValue)
+  }
+  
   return (
     <div className="space-y-2">
       <label htmlFor={id} className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
@@ -110,7 +127,7 @@ function InputField({ label, value, onChange, type = "number", min, max, step, s
           id={id}
           type={type}
           value={value}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={handleChange}
           min={min}
           max={max}
           step={step}
@@ -347,7 +364,7 @@ export default function ABSampleSizeCalculator() {
           <InputField
             label="Baseline Conversion Rate"
             value={baselineRate}
-            onChange={(value) => setBaselineRate(Number(value))}
+            onChange={(value) => setBaselineRate(Number(value) || 0)}
             min="0.1"
             max="99.9"
             step="0.1"
@@ -358,7 +375,7 @@ export default function ABSampleSizeCalculator() {
           <InputField
             label={isRelativeEffect ? "Minimum Detectable Effect (Relative)" : "Minimum Detectable Effect (Absolute)"}
             value={minDetectableEffect}
-            onChange={(value) => setMinDetectableEffect(Number(value))}
+            onChange={(value) => setMinDetectableEffect(Number(value) || 0)}
             min="0.1"
             max={isRelativeEffect ? "200" : "50"}
             step="0.1"
@@ -400,7 +417,7 @@ export default function ABSampleSizeCalculator() {
                 <InputField
                   label="Significance Level (α)"
                   value={alpha * 100}
-                  onChange={(value) => setAlpha(Number(value) / 100)}
+                  onChange={(value) => setAlpha((Number(value) || 0) / 100)}
                   min="1"
                   max="20"
                   step="1"
@@ -411,7 +428,7 @@ export default function ABSampleSizeCalculator() {
                 <InputField
                   label="Statistical Power (1-β)"
                   value={power * 100}
-                  onChange={(value) => setPower(Number(value) / 100)}
+                  onChange={(value) => setPower((Number(value) || 0) / 100)}
                   min="50"
                   max="99"
                   step="1"
