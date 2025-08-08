@@ -73,15 +73,15 @@ export default function About() {
               loving place.
             </p>
             <p>
-              I recently jumped into the world of Real Estate tech to build the
-              marketing operating system that <i>should</i> exist with the
-              terrifically knowledgable and kind team at{' '}
+              I'm currently a Growth PM at{' '}
               <a
                 className="text-teal-500 dark:text-teal-400"
-                href="https://digible.com/"
+                href="https://apollo.io/"
               >
-                Digible.
-              </a>
+                Apollo.io
+              </a>{' '}
+              focused on product-led growth and experimentation inside a
+              cross-functional Growth team for Apollo's end-to-end sales platform.
             </p>
           </div>
         </div>
