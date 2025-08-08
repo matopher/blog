@@ -34,18 +34,14 @@ describe('A/B Test Sample Size Calculator - Component', () => {
   test('renders all form fields with default values', () => {
     render(<ABSampleSizeCalculator />)
     
-    // Check if all input fields are present
+    // Check if main input fields are present
     expect(screen.getByLabelText(/baseline conversion rate/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/minimum detectable effect/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/significance level/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/statistical power/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/mde calculation type/i)).toBeInTheDocument()
+    expect(screen.getByRole('switch', { name: /treat mde as a % lift over baseline/i })).toBeInTheDocument()
     
-    // Check default values
+    // Check default values for main fields
     expect(screen.getByDisplayValue('10')).toBeInTheDocument() // baseline
     expect(screen.getByDisplayValue('20')).toBeInTheDocument() // effect
-    expect(screen.getByDisplayValue('5')).toBeInTheDocument()  // alpha (as percentage)
-    expect(screen.getByDisplayValue('80')).toBeInTheDocument() // power (as percentage)
   })
 
   test('displays calculated sample sizes', async () => {
@@ -82,7 +78,7 @@ describe('A/B Test Sample Size Calculator - Component', () => {
   test('toggle switches between relative and absolute effect calculation', async () => {
     render(<ABSampleSizeCalculator />)
     
-    const toggle = screen.getByLabelText(/mde calculation type/i)
+    const toggle = screen.getByRole('switch', { name: /treat mde as a % lift over baseline/i })
     const effectInput = screen.getByLabelText(/minimum detectable effect/i)
     
     // Initially should be relative (%)

@@ -1,6 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
+const user = userEvent.setup()
+
 // Mock Next.js router with URL parameters
 const mockPush = jest.fn()
 let mockSearchParams = new URLSearchParams()
@@ -19,9 +21,14 @@ Object.defineProperty(window, 'history', {
   writable: true,
 })
 
-// Mock window.location 
+// Mock window.location properly
 delete window.location
-window.location = { pathname: '/tools/ab-sample-size-calculator' }
+window.location = {
+  pathname: '/tools/ab-sample-size-calculator',
+  search: '',
+  hash: '',
+  href: 'http://localhost/tools/ab-sample-size-calculator'
+}
 
 import ABSampleSizeCalculator from '../page'
 
@@ -151,6 +158,10 @@ describe('A/B Test Sample Size Calculator - URL Parameters', () => {
 
     render(<ABSampleSizeCalculator />)
     
+    // Expand advanced settings to see alpha and power fields
+    const advancedButton = screen.getByText(/advanced settings/i)
+    await user.click(advancedButton)
+    
     await waitFor(() => {
       expect(screen.getByDisplayValue('12')).toBeInTheDocument() // baseline
       expect(screen.getByDisplayValue('18')).toBeInTheDocument() // effect
@@ -197,6 +208,14 @@ describe('A/B Test Sample Size Calculator - URL Parameters', () => {
 
   test('creates shareable URLs for common scenarios', async () => {
     render(<ABSampleSizeCalculator />)
+    
+    // Expand advanced settings first
+    const advancedButton = screen.getByText(/advanced settings/i)
+    await user.click(advancedButton)
+    
+    await waitFor(() => {
+      expect(screen.getByLabelText(/significance level/i)).toBeInTheDocument()
+    })
     
     // Set up a common e-commerce scenario
     const baselineInput = screen.getByLabelText(/baseline conversion rate/i)
